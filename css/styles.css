@@ -11,14 +11,16 @@
 
 .logo {
     position: relative;
-    left: 25px;
+    left: 55px;
 }
 
 .header__nav ul {
     display: flex;
+    position: relative;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    right: 45px;
     width: 650px;
     height: 103px;
     line-height: 90px;
@@ -46,7 +48,7 @@
 .slider-container {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,15 +56,15 @@
 }
 
 .slider {
-    width: 800px;
-    height: 500px;
+    width: 1800px;
+    height: 600px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: 600px;
     display: flex;
 }
 
@@ -76,14 +78,14 @@
 }
 
 .slide img {
-    width: 800px;
-    height: 500px;
+    width: 1800px;
+    height: 600px;
     object-fit: cover;
 }
 
 .navigation-manual {
     position: absolute;
-    width: 800px;
+    width: 1800px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -127,9 +129,9 @@
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 1800px;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 560px;
 }
 
 .navigation-auto div {

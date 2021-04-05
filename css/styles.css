@@ -56,14 +56,11 @@
     margin: 0;
     padding: 0;
     height: 75vh;
-    width: 94%;
+    width: 100%;
     position: relative;
-    left: 55px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #234187;
-    border-radius: 5px;
 }
 
 ul,
@@ -74,14 +71,14 @@ ol {
 .slider,
 .slider li {
     height: 500px;
-    width: 1300px;
-    display: flex;
+    width: 100%;
 }
 
 .slider li img {
-    height: 500px;
+    height: 75vh;
     width: 100%;
-    right: 40px;
+    position: relative;
+    bottom: 35px;
     object-fit: cover;
 }
 
@@ -91,13 +88,13 @@ ol {
     width: 100%;
     display: flex;
     justify-content: center;
-    cursor: pointer;
 }
 
 .pagination li {
     font-size: 20px;
     margin: 2px 5px;
     color: #fff;
+    cursor: pointer;
 }
 
 .left,
@@ -112,16 +109,16 @@ ol {
 }
 
 .left {
-    left: 35px;
+    left: 20px;
 }
 
 .left span:hover,
 .right span:hover {
-    color: #00B0E2;
+    color: #234187;
 }
 
 .right {
-    right: 35px;
+    right: 20px;
 }
 
 

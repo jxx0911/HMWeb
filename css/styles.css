@@ -140,7 +140,7 @@
 }
 
 .navigation-auto div {
-    /* border: 2px solid #234187; */
+    border: 2px solid #234187;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;

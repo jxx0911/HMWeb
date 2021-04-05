@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 .header__container {
     display: flex;
     justify-content: space-between;
+    position: sticky;
 }
 
 .logo {
@@ -20,6 +22,7 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     right: 45px;
     width: 650px;
     height: 103px;
@@ -33,13 +36,15 @@
 .header__nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
-    color: blue;
-    font-size: 20px;
+    color: #234187;
+    font-size: 18px;
 }
 
+.header__nav ul li .active,
 .header__nav ul li a:hover {
-    background-color: blue;
+    background-color: #234187;
     color: #fff;
+    border-radius: 5px;
 }
 
 
@@ -52,19 +57,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #234187;
 }
 
 .slider {
-    width: 1800px;
-    height: 600px;
+    width: 1500px;
+    height: 480px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slides {
     width: 500%;
-    height: 600px;
+    height: 480px;
     display: flex;
 }
 
@@ -78,21 +83,21 @@
 }
 
 .slide img {
-    width: 1800px;
-    height: 600px;
+    width: 1500px;
+    height: 480px;
     object-fit: cover;
 }
 
 .navigation-manual {
     position: absolute;
-    width: 1800px;
+    width: 1500px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn {
-    border: 2px solid green;
+    border: 2px solid #234187;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -104,7 +109,7 @@
 }
 
 .manual-btn:hover {
-    background: green;
+    background: #234187;
 }
 
 #radio1:checked~.first {
@@ -129,13 +134,13 @@
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 1800px;
+    width: 1500px;
     justify-content: center;
-    margin-top: 560px;
+    margin-top: 440px;
 }
 
 .navigation-auto div {
-    border: 2px solid green;
+    /* border: 2px solid #234187; */
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -146,17 +151,75 @@
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: green;
+    background: #234187;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: green;
+    background: #234187;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: green;
+    background: #234187;
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
-    background: green;
+    background: #234187;
+}
+
+
+/* tarjetas */
+
+.title-section-2 {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-section-2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-section-2 .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-section-2 .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-section-2 .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container-section-2 .card h4 {
+    font-weight: 600;
+}
+
+.container-section-2 .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-section-2 .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: blueviolet;
 }

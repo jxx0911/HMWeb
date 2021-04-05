@@ -26,6 +26,7 @@
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Ayuda</a></li>
+                    <li><a class="active" href="#">Ingresar</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +36,7 @@
     <main>
 
         <!-- Slider de imagenes -->
-        <div class="slider-container">
+        <section class="slider-container">
             <div class="slider">
                 <div class="slides">
                     <!-- radio buttons -->
@@ -45,7 +46,7 @@
                     <input type="radio" name="radio-btn" id="radio4">
                     <!-- slide images -->
                     <div class="slide first">
-                        <img src="img/fond7.jpg" alt="">
+                        <img src="img/fond2.jpg" alt="">
                     </div>
                     <div class="slide">
                         <img src="img/fond6.jpg" alt="">
@@ -72,19 +73,63 @@
                     <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
+        </section>
 
-            <script type="text/javascript">
-                let contador = 1;
-                setInterval(function() {
-                    document.getElementById('radio' + contador).checked = true;
-                    contador++;
-                    if (contador > 4) {
-                        contador = 1;
-                    }
-                }, 5000);
-            </script>
-        </div>
+        <!-- tarjeta -->
+        <section>
+            <label class="title-section-2">NUESTRO SERVICIOS</label>
+            <div class="container-section-2">
+                <div class="card">
+                    <img src="img/fond1.jpg" alt="">
+                    <h4>Tarjeta 1</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="img/fond6.jpg" alt="">
+                    <h4>Tarjeta 2</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="img/fond5.jpg" alt="">
+                    <h4>Tarjeta 3</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="img/fond4.jpg" alt="">
+                    <h4>Tarjeta 3</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="img/fond3.jpg" alt="">
+                    <h4>Tarjeta 3</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="img/fond2.jpg" alt="">
+                    <h4>Tarjeta 3</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium assumenda, in adipisci?</p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <script type="text/javascript">
+        let contador = 1;
+        setInterval(function() {
+            document.getElementById('radio' + contador).checked = true;
+            contador++;
+            if (contador > 4) {
+                contador = 1;
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>

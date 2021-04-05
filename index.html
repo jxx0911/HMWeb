@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a8c0e9b6c8.js" crossorigin="anonymous"></script>
     <title>Horizonte Medic</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.6.0.js"></script>
@@ -22,8 +23,8 @@
             <nav class="header__nav">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#">Contacto</a></li>
                     <!-- <li><a href="#">Ayuda</a></li> -->
                     <li><a class="active" href="#">Ingresar</a></li>
@@ -62,9 +63,19 @@
             </div>
         </section>
 
-        <!-- tarjeta -->
-        <section class="section-2">
-            <label class="title-section-2">NUESTRO SERVICIOS</label>
+        <!-- nosotros -->
+        <section id="nosotros" class="section-1">
+            <div class="nosotros__container">
+                <div>
+                    <a></a>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- tarjetas especialidades -->
+        <section id="especialidades" class="section-2">
+            <label class="title-section-2">NUESTRAS ESPECIALIDADES</label>
             <div class="container-section-2">
                 <div class="card">
                     <img src="img/fond1.jpg" alt="">
@@ -127,6 +138,7 @@
             $(document).scroll(function() {
                 let top = $(this).scrollTop();
                 if (top > 5) {
+                    console.log(top);
                     header_container.addClass('headerActive');
                     logo.addClass('logoActive');
                     nav.addClass('navActive');

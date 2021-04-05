@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $('.slider li').hide(); // ocultamos los slides
     $('.slider li:first').show(); //mostramos el primer slide
-    $('.pagination li:first').css({ 'color': '#234187' }); //damos estilo al primer item de la paginatcion
+    $('.pagination li:first').css({ 'color': '#00B0E2' }); //damos estilo al primer item de la paginatcion
 
     //ejectuamos funciones
     $('.pagination li').click(pagination);
@@ -28,8 +28,8 @@ $(document).ready(function() {
         $('.slider li').hide();
         $('.slider li:nth-child(' + paginationPos + ')').fadeIn();
 
-        $('.pagination li').css({ 'color': '#858585' });
-        $(this).css({ 'color': '#234187' });
+        $('.pagination li').css({ 'color': '#fff' });
+        $(this).css({ 'color': '#00B0E2' });
 
         imgPos = paginationPos;
     }
@@ -41,8 +41,8 @@ $(document).ready(function() {
             imgPos++;
         }
 
-        $('.pagination li').css({ 'color': '#858585' });
-        $('.pagination li:nth-child(' + imgPos + ')').css({ 'color': '#234187' });
+        $('.pagination li').css({ 'color': '#fff' });
+        $('.pagination li:nth-child(' + imgPos + ')').css({ 'color': '#00B0E2' });
 
         $('.slider li').hide();
         $('.slider li:nth-child(' + imgPos + ')').fadeIn();
@@ -55,8 +55,8 @@ $(document).ready(function() {
             imgPos--;
         }
 
-        $('.pagination li').css({ 'color': '#858585' });
-        $('.pagination li:nth-child(' + imgPos + ')').css({ 'color': '#234187' });
+        $('.pagination li').css({ 'color': '#fff' });
+        $('.pagination li:nth-child(' + imgPos + ')').css({ 'color': '#00B0E2' });
 
         $('.slider li').hide();
         $('.slider li:nth-child(' + imgPos + ')').fadeIn();

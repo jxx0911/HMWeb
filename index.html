@@ -23,9 +23,9 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Especialidades</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Ayuda</a></li>
+                    <!-- <li><a href="#">Ayuda</a></li> -->
                     <li><a class="active" href="#">Ingresar</a></li>
                 </ul>
             </nav>
@@ -63,7 +63,7 @@
         </section>
 
         <!-- tarjeta -->
-        <section>
+        <section class="section-2">
             <label class="title-section-2">NUESTRO SERVICIOS</label>
             <div class="container-section-2">
                 <div class="card">
@@ -117,6 +117,30 @@
             }
         }, 5000);
     </script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let header_container = $('.header__container');
+            let logo = $('.logo');
+            let nav = $('.header__nav');
+
+            $(document).scroll(function() {
+                let top = $(this).scrollTop();
+                if (top > 5) {
+                    header_container.addClass('headerActive');
+                    logo.addClass('logoActive');
+                    nav.addClass('navActive');
+                } else {
+                    header_container.removeClass('headerActive');
+                    header_container.addClass('header__container');
+                    logo.removeClass('logoActive');
+                    logo.addClass('logo');
+                    nav.removeClass('navActive');
+                    nav.addClass('header__nav');
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

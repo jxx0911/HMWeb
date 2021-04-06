@@ -7,13 +7,7 @@
     -moz-box-sizing: border-box;
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
 }
-
-
-/*slider de imagenes */
-
-
-/* tarjetas */

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slider-controller.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/a8c0e9b6c8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -128,31 +129,6 @@
             }
         }, 5000);
     </script> -->
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            let header_container = $('.header__container');
-            let logo = $('.logo');
-            let nav = $('.header__nav');
-
-            $(document).scroll(function() {
-                let top = $(this).scrollTop();
-                if (top > 5) {
-                    console.log(top);
-                    header_container.addClass('headerActive');
-                    logo.addClass('logoActive');
-                    nav.addClass('navActive');
-                } else {
-                    header_container.removeClass('headerActive');
-                    header_container.addClass('header__container');
-                    logo.removeClass('logoActive');
-                    logo.addClass('logo');
-                    nav.removeClass('navActive');
-                    nav.addClass('header__nav');
-                }
-            })
-        })
-    </script>
 
     <!-- <script src="js/slider-images.js"></script> -->
 

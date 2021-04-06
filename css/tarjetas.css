@@ -1,4 +1,4 @@
-.section-2 {
+.tarjetas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     top: 103px;
 }
 
-.title-section-2 {
+.title-tarjetas {
     text-align: center;
     font-size: 40px;
     color: #000;
@@ -16,7 +16,7 @@
     margin: 50px 0px;
 }
 
-.container-section-2 {
+.container-tarjetas {
     width: 100%;
     max-width: 1200px;
     height: 1000px;
@@ -26,7 +26,7 @@
     margin: auto;
 }
 
-.container-section-2 .card {
+.container-tarjetas .card {
     width: 330px;
     height: 430px;
     border-radius: 8px;
@@ -37,27 +37,27 @@
     transition: all 0.25s;
 }
 
-.container-section-2 .card:hover {
+.container-tarjetas .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container-section-2 .card img {
+.container-tarjetas .card img {
     width: 330px;
     height: 220px;
 }
 
-.container-section-2 .card h4 {
+.container-tarjetas .card h4 {
     font-weight: 600;
 }
 
-.container-section-2 .card p {
+.container-tarjetas .card p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.container-section-2 .card a {
+.container-tarjetas .card a {
     font-weight: 500;
     text-decoration: none;
     color: blueviolet;

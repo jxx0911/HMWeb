@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/menu2.css">
     <link rel="stylesheet" href="css/tarjetas.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/noticias.css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slider-controller.js"></script>
     <script src="js/scroll.js"></script>
@@ -39,70 +41,88 @@
     </header>
 
     <!-- Cuerpo principal -->
-    <main>
 
-        <!-- Slider de imagenes -->
-        <section class="slider-container">
-            <ul id="slider" class="slider">
-                <li>
-                    <img style="max-width: 100%;" src="img/fond1.jpg" alt="">
-                </li>
-                <li>
-                    <img style="max-width: 100%;" src="img/fond2.jpg" alt="">
-                </li>
-                <li>
-                    <img style="max-width: 100%;" src="img/fond3.jpg" alt="">
-                </li>
-                <li>
-                    <img style="max-width: 100%;" src="img/fond4.jpg" alt="">
-                </li>
-            </ul>
-            <ol class="pagination">
-            </ol>
+    <!-- Slider de imagenes -->
+    <section class="slider-container">
+        <ul id="slider" class="slider">
+            <li>
+                <img style="max-width: 100%;" src="img/fond1.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 100%;" src="img/fond2.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 100%;" src="img/fond3.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 100%;" src="img/fond4.jpg" alt="">
+            </li>
+        </ul>
+        <ol class="pagination">
+        </ol>
 
-            <div class="left">
-                <span class="fa fa-chevron-left"></span>
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+    </section>
+
+    <!-- menu2-botones -->
+    <section id="menu2" class="section-1">
+        <div class="menu2__container">
+            <div class="menu-btn">
+                <a href="">
+                    <i class="icon fas fa-stethoscope"></i>
+                    <p class="icon-description">Especialidades</p>
+                </a>
+
             </div>
-            <div class="right">
-                <span class="fa fa-chevron-right"></span>
+            <div class="menu-btn">
+                <a href="">
+                    <i class="icon fas fa-hospital-symbol"></i>
+                    <p class="icon-description">Servicios</p>
+                </a>
             </div>
-        </section>
-
-        <!-- menu2-botones -->
-        <section id="menu2" class="section-1">
-            <div class="menu2__container">
-                <div class="menu-btn">
-                    <a href="">
-                        <i class="icon fas fa-stethoscope"></i>
-                        <p class="icon-description">Especialidades</p>
-                    </a>
-
-                </div>
-                <div class="menu-btn">
-                    <a href="">
-                        <i class="icon fas fa-hospital-symbol"></i>
-                        <p class="icon-description">Servicios</p>
-                    </a>
-                </div>
-                <div class="menu-btn">
-                    <a href="">
-                        <i class="icon fas fa-map-marked-alt"></i>
-                        <p class="icon-description">Sedes</p>
-                    </a>
-                </div>
-                <div class="menu-btn">
-                    <a href="">
-                        <i class="icon fas fa-comments"></i>
-                        <p class="icon-description">Comentarios</p>
-                    </a>
-                </div>
+            <div class="menu-btn">
+                <a href="">
+                    <i class="icon fas fa-map-marked-alt"></i>
+                    <p class="icon-description">Sedes</p>
+                </a>
             </div>
-        </section>
+            <div class="menu-btn">
+                <a href="">
+                    <i class="icon fas fa-comments"></i>
+                    <p class="icon-description">Comentarios</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <section id="nosotros" class="section-2">
+        <div class="nosotros__container">
+            <h2>Bienvenidos</h2>
+            <div class="nosotros__img-container">
+                <img src="img/doctors.png" alt="">
+            </div>
+            <div class="nosotros__mision">
+                <h3>Mision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut voluptatem adipisci magnam obcaecati totam repellat nam eaque excepturi non impedit a nulla delectus, quod, molestiae id sed cum blanditiis?</p>
+            </div>
+            <div class="nosotros__vision">
+                <h3>Vision</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem omnis optio. Recusandae, ipsa quae alias adipisci esse iste in ratione id, aut accusantium cupiditate reprehenderit quam, facere dolor doloribus.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- <section id="noticias" class="section-3">
+            <div>
 
+            </div>
+        </section> -->
 
-    </main>
 
     <!-- <script src="js/slider-images.js"></script> -->
 

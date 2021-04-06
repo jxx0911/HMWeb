@@ -1,9 +1,97 @@
 .section-2 {
     position: relative;
     top: 103px;
-}
-
-.nosotros_container {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* caja de arriba: texto */
+
+.nosotros__container-up {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.nosotros__container-up .naturaleza {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative; */
+}
+
+.nosotros__container-up .naturaleza h2,
+.nosotros__container-up .naturaleza p {
+    /* position: absolute; */
+}
+
+.nosotros__container-up .naturaleza h2 {
+    margin-top: 2%;
+}
+
+.nosotros__container-up .naturaleza p {
+    width: 75%;
+    margin-bottom: 2%;
+}
+
+
+/* caja de abajo */
+
+.nosotros__container-down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+/* imagenes */
+
+.nosotros__container-down .down-img {
+    display: flex;
+    flex-direction: row;
+    height: 22.5rem;
+}
+
+.nosotros__container-down .down-img .nosotros__mision-img,
+.nosotros__container-down .down-img .nosotros__vision-img {
+    width: 50%;
+}
+
+.nosotros__container-down .down-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nosotros__container-down .nosotros__mision h3,
+.nosotros__container-down .nosotros__vision h3 {
+    margin: 1.25rem 0;
+}
+
+.nosotros__container-down .nosotros__mision p,
+.nosotros__container-down .nosotros__vision p {
+    width: 75%;
+}
+
+
+/* texto */
+
+.nosotros__container-down .down-txt {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+}
+
+.nosotros__container-down .down-txt .nosotros__mision-txt,
+.nosotros__container-down .down-txt .nosotros__vision-txt {
+    width: 50%;
 }

@@ -6,6 +6,7 @@
 .menu2__container {
     display: flex;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
     align-items: center;
     flex-direction: row;
     margin: .65% auto;
@@ -40,5 +41,5 @@
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 10px;
 }

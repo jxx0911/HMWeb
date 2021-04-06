@@ -64,6 +64,7 @@ ol {
 .left span:hover,
 .right span:hover {
     color: #234187;
+    cursor: pointer;
 }
 
 .right {

@@ -11,24 +11,10 @@
     width: 100%;
 }
 
-.headerActive {
-    display: flex;
-    justify-content: space-between;
-    height: 103px;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-}
-
 .logo {
     position: absolute;
     left: 55px;
     z-index: 10;
-}
-
-.logoActive {
-    position: relative;
-    left: 55px;
 }
 
 .header__nav ul {
@@ -43,10 +29,6 @@
     height: 103px;
     line-height: 90px;
     z-index: 10;
-}
-
-.navActive {
-    right: 45px;
 }
 
 .header__nav ul li {

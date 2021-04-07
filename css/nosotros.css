@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 50px 0;
     /* position: relative; */
 }
 
@@ -43,7 +44,7 @@
 .nosotros__container-up .naturaleza p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    font-style: italic;
+    font-style: normal;
     text-align: center;
     margin: 10px 0;
 }

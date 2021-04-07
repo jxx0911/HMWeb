@@ -28,6 +28,10 @@
     position: relative;
 }
 
+.menu-btn p {
+    cursor: default;
+}
+
 .menu-btn:hover {
     transform: translateY(-10px);
     transition: .1s;

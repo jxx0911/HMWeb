@@ -13,8 +13,7 @@
     background-color: #234187;
 }
 
-.menu-btn a {
-    text-decoration: none;
+.menu-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,8 +21,11 @@
     background-color: #234187;
     height: 15.625rem;
     width: 24rem;
+}
+
+.menu-btn a {
+    text-decoration: none;
     position: relative;
-    cursor: ;
 }
 
 .menu-btn:hover {

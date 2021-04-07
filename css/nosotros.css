@@ -6,10 +6,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    cursor: default;
 }
 
 
-/* caja de arriba: texto */
+/* caja de arriba: BIENVENIDO */
 
 .nosotros__container-up {
     display: flex;
@@ -26,16 +27,25 @@
     /* position: relative; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 .nosotros__container-up .naturaleza h2 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 3.125rem;
+    font-size: 5rem;
+    color: #234187;
+}
+
+.nosotros__container-up .naturaleza span {
+    font-size: 5rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .nosotros__container-up .naturaleza p {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .nosotros__container-up .naturaleza h2 {
@@ -47,8 +57,13 @@
     margin-bottom: 2%;
 }
 
+.nosotros__container-up .naturaleza b:hover {
+    color: #234187;
+    transition: 1s;
+}
 
-/* caja de abajo */
+
+/* caja de abajo: MISION Y VISION */
 
 .nosotros__container-down {
     display: flex;
@@ -58,18 +73,28 @@
 }
 
 
-/* imagenes */
+/* IMAGENES */
+
+
+/* contenedor de las imagenes */
 
 .nosotros__container-down .down-img {
     display: flex;
     flex-direction: row;
     height: 22.5rem;
+    z-index: 1;
 }
+
+
+/* divison de la fila al 50% */
 
 .nosotros__container-down .down-img .nosotros__mision-img,
 .nosotros__container-down .down-img .nosotros__vision-img {
     width: 50%;
 }
+
+
+/* propiedades de imagen/ */
 
 .nosotros__container-down .down-img img {
     width: 100%;
@@ -77,10 +102,8 @@
     object-fit: cover;
 }
 
-.nosotros__container-down .nosotros__mision h3,
-.nosotros__container-down .nosotros__vision h3 {
-    margin: 1.25rem 0;
-}
+
+/* ancho del texto */
 
 .nosotros__container-down .nosotros__mision p,
 .nosotros__container-down .nosotros__vision p {
@@ -88,17 +111,49 @@
 }
 
 
-/* texto */
+/* CONTENEDOR MISION Y VISION */
 
 .nosotros__container-down .down-txt {
     display: flex;
     flex-direction: row;
     position: absolute;
-    text-align: center;
-    top: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
-.nosotros__container-down .down-txt .nosotros__mision-txt,
-.nosotros__container-down .down-txt .nosotros__vision-txt {
-    width: 50%;
+.down-txt .nosotros__mision-txt,
+.down-txt .nosotros__vision-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.down-txt h3,
+.down-txt p {
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+.down-txt h3 {
+    margin-bottom: 2%;
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.down-txt p {
+    margin-top: 2%;
+    font-size: 1.1rem;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }

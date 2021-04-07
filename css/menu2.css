@@ -6,7 +6,7 @@
 .menu2__container {
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     margin: .75% auto;
@@ -23,6 +23,7 @@
     height: 15.625rem;
     width: 24rem;
     position: relative;
+    cursor: ;
 }
 
 .menu-btn:hover {

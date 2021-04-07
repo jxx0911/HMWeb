@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: 103px;
+    /* top: 103px; */
 }
 
 .title-tarjetas {

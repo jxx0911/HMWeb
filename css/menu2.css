@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: row;
     margin: .65% auto;
-    background-color: #234187;
+    /* background-color: #234187; */
 }
 
 .menu-btn a {
@@ -21,7 +21,7 @@
     align-items: center;
     background-color: #234187;
     height: 15.625rem;
-    width: 24rem;
+    width: 30rem;
     position: relative;
 }
 

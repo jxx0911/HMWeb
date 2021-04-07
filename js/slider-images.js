@@ -1,22 +1,26 @@
-let n_images = 4; //Agregar numero de imagenes correspondientes
-let array_images = [];
-//Crear elemento
+/* Respetar patron del nombre al añadir nueva imagen*/
 
-for (let index = 0; index < n_images; index++) {
-    array_images[index] = `img/fond${index+1}.jpg`
-    console.log(array_images[index]);
-}
-
-let li = document.createElement("li");
-let img = document.createElement("img");
+let n_images = 5; //Agregar numero de imagenes correspondientes
+let _images = [];
+let _li = [];
+let _img = [];
 const ul_slider = document.getElementById("slider");
 
-// array_images.forEach(element => {
+//Crear elemento
+for (let index = 0; index < n_images; index++) {
+    _images[index] = `img/slider/fond${index+1}.jpg`
+    _li[index] = document.createElement("li");
+    _img[index] = document.createElement("img");
+    console.log(_images[index]);
+    console.log(_li[index]);
+    console.log(_img[index]);
+}
 
-// });
 
-ul_slider.appendChild(li);
-li.appendChild(img);
-img.setAttribute("style", "max-width: 100%");
-img.setAttribute("src", array_images[0]);
-ul_slider.appendChild(li);
+for (let index = 0; index < n_images; index++) {
+    ul_slider.appendChild(_li[index]);
+    _li[index].appendChild(_img[index]);
+    _img[index].setAttribute("style", "max-width: 100%");
+    _img[index].setAttribute("src", _images[index]);
+    ul_slider.appendChild(_li[index]);
+}

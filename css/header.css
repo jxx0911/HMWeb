@@ -1,10 +1,14 @@
+.header {
+    position: sticky;
+    z-index: 10;
+    /* transition: .5s; */
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
     height: 103px;
     width: 100%;
-    position: fixed;
-    z-index: 10;
 }
 
 .headerActive {
@@ -17,8 +21,9 @@
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     left: 55px;
+    z-index: 10;
 }
 
 .logoActive {
@@ -28,7 +33,7 @@
 
 .header__nav ul {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
@@ -37,6 +42,7 @@
     width: 650px;
     height: 103px;
     line-height: 90px;
+    z-index: 10;
 }
 
 .navActive {

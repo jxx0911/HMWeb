@@ -6,7 +6,7 @@ let _li = [];
 let _img = [];
 const ul_slider = document.getElementById("slider");
 
-//Crear elemento
+//Se añaden etiquetas a los arreglos de las variables
 for (let index = 0; index < n_images; index++) {
     _images[index] = `img/slider/fond${index+1}.jpg`
     _li[index] = document.createElement("li");
@@ -16,7 +16,7 @@ for (let index = 0; index < n_images; index++) {
     console.log(_img[index]);
 }
 
-
+//Se crean los elementos en el DOM
 for (let index = 0; index < n_images; index++) {
     ul_slider.appendChild(_li[index]);
     _li[index].appendChild(_img[index]);

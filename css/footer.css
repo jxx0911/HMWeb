@@ -8,6 +8,17 @@
     flex: 1 100%;
 }
 
+.footer__redes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__redes>* {
+    flex: 1 100%;
+}
+
+@media screen and (min-width:600px) {}
+
 
 /* .footer__container .footer__rs .circle {
     width: 100px;

@@ -43,10 +43,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .nosotros__container-up .naturaleza p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: normal;
     text-align: center;
-    margin: 10px 0;
+    margin-top: 3rem;
 }
 
 .nosotros__container-up .naturaleza h2 {

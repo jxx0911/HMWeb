@@ -57,7 +57,8 @@
     border-radius: 5px;
 } */
 
-.header {
+
+/* .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,4 +108,86 @@
     background-color: #234187;
     color: #fff;
     border-radius: 5px;
+} */
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hosp {
+    background-image: url('../img/hosp2.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra {
+    position: absolute;
+    /* background-color: #fff; */
+    width: 100%;
+    top: 0rem;
+    padding: 1rem 0;
+}
+
+.barra .contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .barra .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo,
+.navegacion {
+    text-align: center;
+}
+
+.navegacion ul {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .navegacion {
+        flex: 0 0 32rem;
+        margin-top: 2rem;
+    }
+    .navegacion ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.navegacion ul li a {
+    color: #234187;
+    font-size: 1.09rem;
+    font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-img {
+    max-width: 18rem;
+}
+
+.header-contenido h1 {
+    color: #234187;
+    font-size: 4rem;
+    text-transform: uppercase;
+    max-width: 50rem;
+    font-family: 'Roboto', sans-serif;
 }

@@ -145,8 +145,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 .down-txt h3 {
     margin-bottom: 2%;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-family: 'Roboto', sans-serif;
+    /* color: #6c351c; */
     /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
@@ -156,5 +157,7 @@
     font-size: 1.1rem;
     width: 75%;
     font-family: 'Roboto', sans-serif;
+    /* color: #6c351c; */
+    font-weight: 750;
     /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }

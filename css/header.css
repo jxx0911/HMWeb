@@ -178,6 +178,19 @@
     font-size: 1.09rem;
     font-weight: 550;
     font-family: 'Roboto', sans-serif;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.navegacion ul li a:hover {
+    color: #fff;
+    background-color: #234187;
+}
+
+.navegacion ul .active {
+    color: #fff;
+    background-color: #234187;
 }
 
 .logo-img {

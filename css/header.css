@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .header {
     position: sticky;
     z-index: 10;
-    /* transition: .5s; */
 }
 
 .header__container {
@@ -53,6 +52,56 @@
 
 .header__nav ul li .active,
 .header__nav ul li a:hover {
+    background-color: #234187;
+    color: #fff;
+    border-radius: 5px;
+} */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+}
+
+.logo-header {
+    width: 20.625rem;
+    height: 5.5rem;
+    margin: 10px 0 0 50px;
+    position: relative;
+}
+
+.header .logo-header img {
+    width: 20.625rem;
+    height: 5rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    margin: 0 25px 0 0;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.nav-bar li a {
+    padding: 10px 25px;
+    margin: 0 5px;
+    color: #234187;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-bar li .active {
+    background-color: #234187;
+}
+
+.nav-bar li .active,
+.nav-bar li a:hover {
     background-color: #234187;
     color: #fff;
     border-radius: 5px;

@@ -71,6 +71,7 @@
     height: 5.5rem;
     margin: 10px 0 0 50px;
     position: relative;
+    left: 4.4rem;
 }
 
 .header .logo-header img {
@@ -84,11 +85,12 @@
     height: 50%;
     margin: 0 25px 0 0;
     position: relative;
+    right: 4.5rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .nav-bar li a {
-    padding: 10px 25px;
+    padding: 10px 15px;
     margin: 0 5px;
     color: #234187;
     font-family: 'Roboto', sans-serif;

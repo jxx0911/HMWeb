@@ -1,5 +1,6 @@
-.barra .contenedor,
-.header-contenido .contenedor {
+/* .header-contenido .contenedor */
+
+.barra .contenedor {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -15,14 +16,14 @@
 
 .header {
     display: flex;
-    position: relative;
+    /* position: relative; */
     flex-direction: column;
     justify-content: center;
 }
 
 .barra {
-    position: absolute;
-    /* background-color: #fff; */
+    /* position: absolute; */
+    background-color: #fff;
     width: 100%;
     top: 0rem;
     padding: 1rem 0;

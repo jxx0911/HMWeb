@@ -9,9 +9,10 @@
     <title>Horizonte Medic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/menu2.css">
-    <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/menu2.css">
+    <link rel="stylesheet" href="css/bienvenido.css">
+    <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slider-controller.js"></script>
@@ -22,7 +23,7 @@
 
 <body>
     <!-- Header, logo y navbar -->
-    <header id="header" class="header hosp">
+    <header id="header" class="header ">
         <div class="barra">
             <div class="contenedor">
                 <div class="logo">
@@ -39,13 +40,21 @@
                 </nav>
             </div>
         </div>
-        <div class="header-contenido">
-            <div class="contenedor">
-                <p>Bienvenido a</p>
-                <h1>Horizonte Medic</h1>
-            </div>
-        </div>
     </header>
+
+    <!-- NOTICIAS, Slider de imagenes -->
+    <section class="slider-container">
+        <ul id="slider" class="slider">
+        </ul>
+        <ol class="pagination">
+        </ol>
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+    </section>
 
 
     <!-- menu2-botones -->
@@ -74,6 +83,15 @@
         </ul>
     </section>
 
+    <section class="bienvenido hosp">
+        <div class="header-contenido">
+            <div class="contenedor">
+                <p>Bienvenido a</p>
+                <h1>Horizonte Medic</h1>
+            </div>
+        </div>
+    </section>
+
     <!-- seccion-nosotros -->
     <section class="nosotros">
         <div class="nosotros-container">
@@ -89,19 +107,7 @@
         </div>
     </section>
 
-    <!-- NOTICIAS, Slider de imagenes -->
-    <section class="slider-container">
-        <ul id="slider" class="slider">
-        </ul>
-        <ol class="pagination">
-        </ol>
-        <div class="left">
-            <span class="fa fa-chevron-left"></span>
-        </div>
-        <div class="right">
-            <span class="fa fa-chevron-right"></span>
-        </div>
-    </section>
+
 
 
     <footer class="footer">

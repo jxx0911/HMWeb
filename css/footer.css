@@ -15,13 +15,14 @@
 
 .relleno-footer {
     background-color: #1E2749;
-    height: 5rem;
+    height: 100%;
 }
 
 .relleno-footer .r-f-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -32,12 +33,15 @@
 }
 
 .r-footer {
+    display: flex;
     text-align: center;
 }
 
 .r-footer ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    margin: .4rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,7 +63,7 @@
 
 .r-footer ul li a {
     color: #fff;
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 550;
     font-family: 'Roboto', sans-serif;
     padding: 5px 15px;

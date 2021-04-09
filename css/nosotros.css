@@ -84,3 +84,7 @@
 .nosotros-btn span:hover {
     animation: slidebg 2s linear infinite
 }
+
+.nosotros .nosotros-btn {
+    border: 1px solid black;
+}

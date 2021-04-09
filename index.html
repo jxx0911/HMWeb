@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/menu2.css">
-    <!-- <link rel="stylesheet" href="css/bienvenido.css"> -->
     <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -36,11 +35,14 @@
                 </div>
                 <nav class="navegacion">
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Nosotros</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="">Especialidades</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="#contacto">Contactanos</a></li>
                         <li><a class="active" href="loginUser.html">Ingresar</a></li>
+                        <li class="nav-r"><a href="">Servicios</a></li>
+                        <li class="nav-r"><a href="">Sedes</a></li>
+                        <li class="nav-r"><a href="">Comentarios</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,7 +50,7 @@
     </header>
 
     <!-- NOTICIAS, Slider de imagenes -->
-    <section class="slider-container">
+    <section id="#inicio" class="slider-container">
         <ul id="slider" class="slider">
         </ul>
         <ol class="pagination">
@@ -89,7 +91,7 @@
     </section>
 
     <!-- seccion-nosotros -->
-    <section class="nosotros hosp">
+    <section id="nosotros" class="nosotros hosp">
         <div class="nosotros-container">
             <div class="nosotros-h2">
                 <h2>¿Quienes Somos?</h2>
@@ -104,7 +106,7 @@
     </section>
 
     <!-- contacto -->
-    <section class="contacto">
+    <section id="contacto" class="contacto">
         <div class="contacto-container">
             <div class="contacto-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.5059062569064!2d-79.0375191708015!3d-8.099072699635581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3db2204fc5c9%3A0x4576a668ec35df68!2sPOLICLINICO%20HORIZONTE%20MEDIC%20-%20PIEROLA!5e0!3m2!1sen!2spe!4v1617998028237!5m2!1sen!2spe"

@@ -3,7 +3,13 @@
     height: 65vh;
     display: grid;
     align-items: center;
-    background-color: #234187;
+    /* background-color: #234187; */
+}
+
+@media screen and (max-width: 507px) {
+    .contacto {
+        height: 100vh;
+    }
 }
 
 .contacto-container {

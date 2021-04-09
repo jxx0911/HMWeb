@@ -1,4 +1,4 @@
-.myv ul {
+/* .myv ul {
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
@@ -36,4 +36,111 @@ ul .vision .vision-img {
 
 .myv ul .vision p {
     font-size: 1.3rem;
+} */
+
+.section-2 {
+    position: relative;
+    /* top: 103px; */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+.nosotros__container-down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+/* IMAGENES */
+
+
+/* contenedor de las imagenes */
+
+.nosotros__container-down .down-img {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+    z-index: 1;
+}
+
+
+/* divison de la fila al 50% */
+
+.nosotros__container-down .down-img .nosotros__mision-img,
+.nosotros__container-down .down-img .nosotros__vision-img {
+    width: 50%;
+}
+
+
+/* propiedades de imagen/ */
+
+.nosotros__container-down .down-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ancho del texto */
+
+.nosotros__container-down .nosotros__mision p,
+.nosotros__container-down .nosotros__vision p {
+    width: 75%;
+}
+
+
+/* CONTENEDOR MISION Y VISION */
+
+.nosotros__container-down .down-txt {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.down-txt .nosotros__mision-txt,
+.down-txt .nosotros__vision-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.down-txt h3,
+.down-txt p {
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+.down-txt h3 {
+    margin-bottom: 2%;
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #234187;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.down-txt p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    width: 60%;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    font-weight: 500;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }

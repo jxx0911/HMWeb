@@ -26,7 +26,6 @@
     background-color: #fff;
     width: 100%;
     top: 0rem;
-    padding: 1rem 0;
 }
 
 .barra .contenedor {
@@ -65,8 +64,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Saira+Condensed:wght@600&display=swap');
 .navegacion ul li a {
     color: #234187;
-    font-size: 1.09rem;
-    font-weight: 550;
+    font-size: 1.05rem;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
     padding: 5px 15px;
     margin: 0 5px;
@@ -84,7 +83,8 @@
 }
 
 .logo-img {
-    max-width: 18rem;
+    max-width: 15rem;
+    padding: 10px 0;
 }
 
 .header-contenido p {

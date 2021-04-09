@@ -16,9 +16,9 @@ $(document).ready(function() {
     $('.right span').click(nextSlider);
     $('.left span').click(prevSlider);
 
-    setInterval(function() {
-        nextSlider();
-    }, 10000);
+    // setInterval(function() {
+    //     nextSlider();
+    // }, 10000);
 
     //--------------------------------------------------------------------------------------
 

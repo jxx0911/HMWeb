@@ -1,6 +1,6 @@
 /* Respetar patron del nombre al añadir nueva imagen*/
 
-let n_images = 5; //Agregar numero de imagenes correspondientes
+let n_images = 7; //Agregar numero de imagenes correspondientes
 let _images = [];
 let _li = [];
 let _img = [];
@@ -16,7 +16,7 @@ for (let index = 0; index < n_images; index++) {
 //Se crean los elementos en el DOM
 for (let index = 0; index < n_images; index++) {
 
-    _img[index].setAttribute("style", "max-width: 100%");
+    // _img[index].setAttribute("style", "max-width: 100%");
     _img[index].setAttribute("src", _images[index]);
     _li[index].appendChild(_img[index]);
     ul_slider.appendChild(_li[index]);

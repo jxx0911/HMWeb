@@ -16,9 +16,10 @@
 
 .header {
     display: flex;
-    /* position: relative; */
+    position: sticky;
     flex-direction: column;
     justify-content: center;
+    z-index: 10000;
 }
 
 .barra {
@@ -61,7 +62,6 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Saira+Condensed:wght@600&display=swap');
 .navegacion ul li a {
     color: #234187;
     font-size: 1.05rem;

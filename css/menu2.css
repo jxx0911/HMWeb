@@ -29,7 +29,6 @@
     transition: .2s;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .section-1 ul li a {
     color: #fff;
     display: flex;

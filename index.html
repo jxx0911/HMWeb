@@ -9,7 +9,7 @@
     <title>Horizonte Medic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <!-- <link rel="stylesheet" href="css/slider.css"> -->
     <link rel="stylesheet" href="css/menu2.css">
     <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="css/contacto.css">
@@ -19,7 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/slider-controller.js"></script>
     <script src="https://kit.fontawesome.com/a8c0e9b6c8.js" crossorigin="anonymous"></script>
     <script>
     </script>
@@ -36,7 +35,7 @@
             </ul>
         </div>
     </nav>
-    <header id="header" class="header ">
+    <header id="header" class="header hosp">
         <div class="barra">
             <div class="contenedor">
                 <div class="logo">
@@ -56,10 +55,30 @@
                 </nav>
             </div>
         </div>
+        <div class="header-contenido">
+            <div class="contenedor">
+                <div class="slider" id="slider">
+                    <div class="slider__section">
+                        <img src="img/slider/fond1.png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider/fond2.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider/fond3.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider/fond4.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__btn slider__btn-right" id="btn-right">&#62;</div>
+                <div class="slider__btn slider__btn-left" id="btn-left">&#60;</div>
+            </div>
+        </div>
     </header>
 
     <!-- NOTICIAS, Slider de imagenes -->
-    <section id="#inicio" class="slider-container">
+    <!-- <section id="#inicio" class="slider-container">
         <ul id="slider" class="slider">
         </ul>
         <ol class="pagination">
@@ -70,7 +89,7 @@
         <div class="right">
             <span class="fa fa-chevron-right"></span>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- menu2-botones -->
@@ -164,7 +183,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/slider-images.js"></script>
+    <script src="js/slider-controller.js"></script>
+
+    <!-- <script src="js/slider-images.js"></script> -->
     <!-- <script src="js/_scroll.js"></script> -->
 </body>
 

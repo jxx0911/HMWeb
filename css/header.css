@@ -1,5 +1,36 @@
 /* .header-contenido .contenedor */
 
+.pre-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    padding: 10px 0;
+    color: #234187;
+}
+
+.pre-header a {
+    color: #234187;
+}
+
+.pre-header .contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pre-header ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pre-header ul li {
+    padding-right: 20px;
+}
+
+.pre-header ul li i {
+    font-size: .9rem;
+    padding-right: 10px;
+}
+
 .barra .contenedor {
     max-width: 1100px;
     margin: 0 auto;

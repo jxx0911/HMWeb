@@ -105,6 +105,6 @@ btnLeft.addEventListener('click', function() {
     prev();
 })
 
-// setInterval(function() {
-//     next();
-// }, 8000);
+setInterval(function() {
+    next();
+}, 6000);

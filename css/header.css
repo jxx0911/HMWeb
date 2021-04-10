@@ -63,6 +63,7 @@
     /* background-color: #fff; */
     width: 100%;
     top: 0rem;
+    margin-top: 1rem;
 }
 
 .barra .contenedor {
@@ -122,22 +123,6 @@
     padding: 10px 0;
 }
 
-.header-contenido p {
-    color: #234187;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    max-width: 50rem;
-    font-family: 'Saira Condensed', sans-serif;
-}
-
-.header-contenido h1 {
-    color: #234187;
-    font-size: 5rem;
-    text-transform: uppercase;
-    max-width: 50rem;
-    font-family: 'Saira Condensed', sans-serif;
-}
-
 @media screen and (max-width: 950px) {
     .navegacion {
         flex: 0 0 11rem;
@@ -152,6 +137,10 @@
     .navegacion ul li.nav-r {
         display: initial;
     }
+}
+
+.header-contenido {
+    margin-top: 4rem;
 }
 
 .header-contenido .contenedor {

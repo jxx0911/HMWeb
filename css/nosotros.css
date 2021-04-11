@@ -3,15 +3,6 @@
     margin: 0 auto;
 }
 
-.hosp {
-    background-image: url('../img/hosp2.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .nosotros-p {
     max-width: 500px;
     margin: 0 auto;

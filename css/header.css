@@ -232,13 +232,14 @@
         margin-left: 1rem;
     }
     .header-contenido {
-        z-index: -1;
+        z-index: 1;
     }
     .navegacion {
         width: 98%;
         position: sticky;
         display: none;
         opacity: 0;
+        z-index: 2;
     }
     @keyframes muestraMenu {
         from {
@@ -263,7 +264,6 @@
     }
     .navegacion ul {
         flex-direction: column;
-        z-index: 10000;
         background: #234187;
     }
     .navegacion ul li {
@@ -345,7 +345,7 @@
     display: none;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 760px) {
     .slider {
         height: 350px;
     }

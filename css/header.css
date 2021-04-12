@@ -74,6 +74,19 @@
 
 .logo .burguer {
     display: none;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.logo .burguer span {
+    display: block;
+    background-color: #234187;
+    height: 3px;
+    width: 28px;
+    margin: 5px auto;
+    border-radius: 2px;
 }
 
 .logo-img {
@@ -201,6 +214,11 @@
     .logo .burguer {
         display: initial;
         font-size: 2rem;
+        cursor: pointer;
+        transition: .2s .1s;
+    }
+    .logo .burguer:hover {
+        transform: rotate(360deg);
     }
     .barra .contenedor {
         flex-direction: column;
@@ -220,9 +238,28 @@
         width: 98%;
         position: sticky;
         display: none;
+        opacity: 0;
+    }
+    @keyframes muestraMenu {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .br-1.animado {
+        transform: rotate(-45deg) translate(-6.5px, 5px);
+    }
+    .br-2.animado {
+        opacity: 0;
+    }
+    .br-3.animado {
+        transform: rotate(45deg) translate(-6.5px, -5px);
     }
     .navegacion.activado {
         display: initial;
+        animation: muestraMenu 350ms ease-in-out both;
     }
     .navegacion ul {
         flex-direction: column;

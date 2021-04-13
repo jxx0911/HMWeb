@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .wrapper h2 {
@@ -28,7 +28,7 @@
     font-size: 4rem;
     color: #234187;
     flex: 0 1 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .single-service {

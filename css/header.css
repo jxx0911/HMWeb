@@ -207,6 +207,13 @@
 }
 
 @media screen and (max-width: 760px) {
+    .pre-header ul li a.intranet {
+        display: none;
+    }
+    .pre-header .contenedor {
+        max-width: 600px;
+        margin: 0 auto;
+    }
     .contenedor {
         width: 100%;
     }
@@ -264,7 +271,6 @@
     }
     .navegacion.activado {
         display: initial;
-        color: #fff;
         animation: muestraMenu 350ms ease-in-out both;
     }
     .navegacion ul {
@@ -285,18 +291,20 @@
     }
     .navegacion ul li.active a,
     .navegacion ul li a {
+        font-size: 1.5rem;
         color: #fff;
+        background: transparent;
     }
-    .navegacion ul li.active a:hover,
     .navegacion ul li a:hover {
-        padding: 2px 10px;
+        padding: 10px 30px;
         transition: .2s;
         border: 1px solid #fff;
         border-radius: 5px;
     }
-    .navegacion ul li.active a {
-        color: #fff;
-        background: transparent;
+    .navegacion ul li.active a:hover {
+        color: #212C7C;
+        background: #fff;
+        border: 1px solid #212C7C;
     }
     .navegacion ul li.nav-r {
         display: initial;

@@ -82,7 +82,7 @@
 
 .logo .burguer span {
     display: block;
-    background-color: #234187;
+    background-color: #212C7C;
     height: 3px;
     width: 28px;
     margin: 5px auto;
@@ -207,6 +207,9 @@
 }
 
 @media screen and (max-width: 760px) {
+    .contenedor {
+        width: 100%;
+    }
     .logo-container {
         width: 90%;
         margin: 0 auto;
@@ -216,6 +219,7 @@
         font-size: 2rem;
         cursor: pointer;
         transition: .2s .1s;
+        z-index: 20;
     }
     .logo .burguer:hover {
         transform: rotate(360deg);
@@ -239,7 +243,7 @@
         position: sticky;
         display: none;
         opacity: 0;
-        z-index: 2;
+        z-index: 10;
     }
     @keyframes muestraMenu {
         from {
@@ -260,14 +264,21 @@
     }
     .navegacion.activado {
         display: initial;
+        color: #fff;
         animation: muestraMenu 350ms ease-in-out both;
     }
     .navegacion ul {
+        /* display: none; */
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: #234187;
-        height: 82vh;
+        position: absolute;
+        top: -7.75rem;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: #004b95;
+        height: 95.5vh;
     }
     .navegacion ul li {
         padding: 1rem 0;

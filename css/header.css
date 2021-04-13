@@ -235,7 +235,7 @@
         z-index: 1;
     }
     .navegacion {
-        width: 98%;
+        width: 100%;
         position: sticky;
         display: none;
         opacity: 0;
@@ -264,10 +264,13 @@
     }
     .navegacion ul {
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         background: #234187;
+        height: 82vh;
     }
     .navegacion ul li {
-        padding: 1.26rem 0;
+        padding: 1rem 0;
     }
     .navegacion ul li.active a,
     .navegacion ul li a {

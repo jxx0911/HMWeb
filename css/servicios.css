@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 1150px) {
     .servicios {
-        height: 140vh;
+        height: 150vh;
     }
     .wrapper {
         width: 900px;
@@ -87,7 +87,7 @@
     }
     .single-service {
         width: 40%;
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 850px) {
+    .servicios {
+        height: 160vh;
+    }
     .wrapper {
         width: 600px;
         margin: 0 auto;
@@ -113,13 +116,13 @@
     }
     .single-service {
         width: 40%;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 760px) {
     .servicios {
-        height: 115vh;
+        height: 135vh;
     }
     .wrapper {
         width: 450px;
@@ -141,13 +144,13 @@
     .single-service {
         flex: 0 0 40%;
         height: 8rem;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 470px) {
     .servicios {
-        height: 180vh;
+        height: 230vh;
     }
     .wrapper {
         width: 280px;
@@ -168,6 +171,6 @@
     }
     .single-service {
         width: 75%;
-        font-size: 18px;
+        font-size: 15px;
     }
 }

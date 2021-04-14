@@ -10,6 +10,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;
     padding: 10px 0;
+    height: 2rem;
     color: #234187;
 }
 
@@ -300,7 +301,7 @@
         left: 0;
         margin: 0 auto;
         background: #004b95;
-        height: 37rem;
+        height: calc(100vh - 2rem);
     }
     .navegacion ul li {
         padding: 1rem 0;

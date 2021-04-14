@@ -12,6 +12,11 @@
     padding: 10px 0;
     height: 2rem;
     color: #234187;
+    background: url("../img/cuadrado_transp.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .pre-header a {
@@ -59,7 +64,7 @@
     /* background-color: #fff; */
     width: 100%;
     top: 0rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 .barra .contenedor {

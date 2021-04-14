@@ -13,9 +13,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     margin-top: 4rem;
-    margin-bottom: 5rem;
 }
 
 .nosotros-h2 h2 {
@@ -48,6 +47,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .nosotros .nosotros-btn {
@@ -56,7 +56,8 @@
     align-items: center;
 }
 
-.nosotros-btn a {
+.nosotros-btn .leerMas {
+    cursor: pointer;
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -69,7 +70,7 @@
     color: #234187;
 }
 
-.nosotros-btn a:before {
+.nosotros-btn .leerMas:before {
     content: '';
     position: absolute;
     top: -2px;
@@ -80,12 +81,12 @@
     border: 2px solid transparent;
 }
 
-.nosotros-btn a:hover:before {
+.nosotros-btn .leerMas:hover:before {
     animation: animate 1s linear forwards;
     animation-delay: .00000001s;
 }
 
-.nosotros-btn a::after {
+.nosotros-btn .leerMas::after {
     content: '';
     position: absolute;
     top: -2px;
@@ -96,7 +97,7 @@
     border: 2px solid transparent;
 }
 
-.nosotros-btn a:hover:after {
+.nosotros-btn .leerMas:hover:after {
     animation: animate2 1s linear forwards;
     animation-delay: .000000001s;
 }
@@ -155,10 +156,79 @@
     }
 }
 
+.myv-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.myv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: ;
+    background-image: url("../img/myc.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.mision h3,
+.vision h3 {
+    cursor: default;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.mision h3::before,
+.vision h3::before {
+    content: "";
+    display: block;
+    position: relative;
+    background-color: #0651db;
+    margin: 0 auto;
+    height: 5px;
+    width: 50px;
+    border-radius: 3px;
+    top: 3.75rem;
+}
+
+.mision p,
+.vision p {
+    cursor: default;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.mision h3::after,
+.vision h3::after {
+    content: "";
+    display: block;
+    position: relative;
+    background-color: #0651db;
+    margin: 0 auto;
+    height: 2px;
+    width: 200px;
+    border-radius: 5px;
+    top: .565rem;
+}
+
 @media screen and (max-width: 1150px) {
     .nosotros-p {
         max-width: 800px;
         margin: 3rem auto;
+    }
+    .myv-container {
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
 
@@ -175,10 +245,18 @@
     .nosotros-p {
         max-width: 600px;
     }
+    .myv-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 760px) {
     .nosotros-p {
         max-width: 75%;
+    }
+    .myv-container {
+        max-width: 75%;
+        margin: 0 auto;
     }
 }

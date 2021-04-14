@@ -54,7 +54,7 @@
     /* background-color: #fff; */
     width: 100%;
     top: 0rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .barra .contenedor {
@@ -284,7 +284,7 @@
         left: 0;
         margin: 0 auto;
         background: #004b95;
-        height: 95.5vh;
+        height: 37rem;
     }
     .navegacion ul li {
         padding: 1rem 0;
@@ -316,6 +316,7 @@
     overflow: hidden;
     box-shadow: 0 0 0 5px transparent, 0 15px 50px;
     position: relative;
+    top: 12rem;
 }
 
 .slider__btn {

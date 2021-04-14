@@ -29,6 +29,7 @@
     color: #234187;
     flex: 0 1 100%;
     margin-bottom: 3rem;
+    cursor: default;
 }
 
 .single-service {

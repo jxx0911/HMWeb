@@ -6,6 +6,11 @@
 
 /* PRE-HEADER */
 
+.p-h-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .pre-header {
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;
@@ -23,24 +28,24 @@
     color: #234187;
 }
 
-.pre-header .contenedor {
-    max-width: 1100px;
-    margin: 0 auto;
+.pre-header .p-h-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .pre-header ul {
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
 .pre-header ul li {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .pre-header ul li i {
-    font-size: .9rem;
-    padding-right: 10px;
+    font-size: 1rem;
+    padding-right: 2.5px;
 }
 
 
@@ -111,7 +116,7 @@
 /* Media Query para el logo y el navbar */
 
 @media screen and (max-width: 1250px) {
-    .pre-header .contenedor {
+    .pre-header .p-h-contenedor {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -122,9 +127,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .logo .burguer {
-        display: initial;
-    }
     .logo-img {
         max-width: 13rem;
         padding: 10px 0;
@@ -179,6 +181,17 @@
 /* media query para distintas resoluciones */
 
 @media screen and (max-width: 1050px) {
+    .pre-header .p-h-contenedor {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .pre-header {
+        font-size: .7rem;
+    }
+    .pre-header ul li i {
+        font-size: .9rem;
+        padding-right: 5px;
+    }
     .navegacion {
         flex: 0 0 5rem;
     }
@@ -213,12 +226,20 @@
     .navegacion ul li.nav-r {
         display: none;
     }
-    .logo .burguer {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 815px) {
+    .pre-header .p-h-contenedor {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .pre-header {
+        font-size: .6rem;
+    }
+    .pre-header ul li i {
+        font-size: .8rem;
+        padding-right: 4px;
+    }
     .navegacion {
         margin-right: 2rem;
     }
@@ -232,9 +253,24 @@
     .pre-header ul li a.intranet {
         display: none;
     }
-    .pre-header .contenedor {
+    .pre-header .p-h-contenedor {
         max-width: 600px;
         margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pre-header {
+        font-size: .7rem;
+        height: 2.8rem;
+    }
+    .pre-header ul {
+        justify-content: center;
+    }
+    .pre-header ul li {
+        padding-right: 5px;
+    }
+    .pre-header ul li i {
+        font-size: .8rem;
     }
     .contenedor {
         width: 100%;
@@ -257,12 +293,7 @@
         flex-direction: column;
         justify-content: flex-start;
         height: calc(100vh - 2rem);
-    }
-    .pre-header {
-        font-size: .75rem;
-        max-width: 400px;
-        margin: 0 auto;
-        margin-left: 1rem;
+        margin-top: .5rem;
     }
     .header-contenido {
         z-index: 1;
@@ -301,7 +332,7 @@
         justify-content: space-around;
         align-items: center;
         position: absolute;
-        top: -7.75rem;
+        top: -7.1rem;
         right: 0;
         left: 0;
         margin: 0 auto;

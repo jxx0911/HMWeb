@@ -22,49 +22,16 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/a8c0e9b6c8.js" crossorigin="anonymous"></script>
     <script>
+        $(function() {
+            $('#header').load('views/header.html');
+            $('#footer').load('views/footer.html');
+        });
     </script>
 </head>
 
 <body>
     <!-- Pre-header, Header, logo y navbar -->
-    <header id="header" class="header">
-        <nav class="pre-header">
-            <div class="contenedor">
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i><a href="#contacto">Contáctanos</a></li>
-                    <li><i class="fas fa-phone"></i>944333222</li>
-                    <li><i class="far fa-envelope"></i>hm@gmail.com</li>
-                    <li><a class="intranet" href="">Intranet</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="barra" class="barra">
-            <div class="contenedor">
-                <div class="logo">
-                    <div class="logo-container">
-                        <img class="logo-img" src="img/LOGO_color_HM.png" alt="">
-                        <div class="burguer">
-                            <span class="br-1"></span>
-                            <span class="br-2"></span>
-                            <span class="br-3"></span>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navegacion">
-                    <ul>
-                        <li><a style="border: 1px solid #234187;" href="#inicio">Home</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contactanos</a></li>
-                        <li class="active"><a href="loginUser.html">Ingresar</a></li>
-                        <li class="nav-r"><a href="">Especialidades</a></li>
-                        <li class="nav-r"><a href="">Sedes</a></li>
-                        <li class="nav-r"><a href="">Comentarios</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <header id="header" class="header"></header>
 
     <div class="header-contenido hosp">
         <div class="contenedor">
@@ -212,36 +179,7 @@
     </section>
 
 
-    <footer class="footer">
-        <div class="layout">
-            <div class="layout-container">
-                <img src="img/montanaFooterPng.png" alt="">
-            </div>
-        </div>
-        <div class="relleno-footer">
-            <div class="r-f-container">
-                <div class="txt-footer">
-                    <p>© 2021 Horizonte Medic - Todos los derechos reservados</p>
-                </div>
-                <div class="r-footer">
-                    <ul>
-                        <li>
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-whatsapp"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-google"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer" class="footer"></footer>
     <script src="js/slider-controller.js"></script>
     <script src="js/btn-responsive.js"></script>
     <!-- <script src="js/slider-images.js"></script> -->

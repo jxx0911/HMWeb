@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 4rem;
+    padding-top: 3rem;
 }
 
 .wrapper h2 {

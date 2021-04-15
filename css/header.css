@@ -61,7 +61,7 @@
     position: sticky;
     flex-direction: column;
     justify-content: center;
-    z-index: 10000;
+    z-index: 5;
 }
 
 .barra {

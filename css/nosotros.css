@@ -13,8 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0 0;
-    margin-top: 4rem;
+    padding-top: 3rem;
 }
 
 .nosotros-h2 h2 {

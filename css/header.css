@@ -172,7 +172,7 @@
 }
 
 .navegacion ul li a:hover {
-    transition: .2s;
+    transition: all .4s ease;
     color: #fff;
     background-color: #234187;
 }

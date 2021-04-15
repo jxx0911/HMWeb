@@ -3,7 +3,7 @@
     overflow: hidden;
     box-shadow: 0 0 0 5px transparent, 0 15px 50px;
     position: relative;
-    top: 12rem;
+    top: 25vh;
 }
 
 .slider__btn {

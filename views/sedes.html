@@ -8,6 +8,7 @@
     <title>Horizonte Medic</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sedes.css">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,13 +26,52 @@
 
     <section id="sedes" class="sedes">
         <div class="sedes-container">
-
+            <div class="sedesTop">
+                <div class="sedes-img"></div>
+                <div class="sedes-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.695549006946!2d-79.03798651643861!3d-8.099509935365901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3db2204fc5c9%3A0x4576a668ec35df68!2sPOLICLINICO%20HORIZONTE%20MEDIC%20-%20PIEROLA!5e0!3m2!1ses-419!2spe!4v1618589907723!5m2!1ses-419!2spe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="sedesBot">
+                <div class="sede-tlf">
+                    <h3>Telefono</h3>
+                    <p id="s-m"><i class="fas fa-mobile-alt"></i>999333111</p>
+                </div>
+                <div class="sede-correo">
+                    <h3>Correo</h3>
+                    <p id="s-c"><i class="far fa-envelope"></i>hm@gmail.com</p>
+                </div>
+                <div class="sede-dir">
+                    <h3>Direccion</h3>
+                    <p id="s-d"><i class="fas fa-map-marker-alt"></i>ABC 123</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contacto" class="contacto"></section>
     <footer id="footer" class="footer"></footer>
 
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('#s-m', {
+            duration: 1000,
+            origin: 'top',
+            distance: '-30px'
+        });
+        sr.reveal('#s-c', {
+            duration: 1000,
+            origin: 'top',
+            distance: '-30px'
+        });
+        sr.reveal('#s-d', {
+            duration: 1000,
+            origin: 'top',
+            distance: '-30px'
+        });
+    </script>
 </body>
 
 </html>

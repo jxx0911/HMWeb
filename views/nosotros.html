@@ -1,0 +1,46 @@
+<div class="nosotros-container">
+    <div class="nosotros-h2">
+        <h2>¿Quienes Somos?</h2>
+    </div>
+    <div class="nosotros-p">
+        <p><b>Horizonte Medic</b> es una Institución Privada de un Primer Nivel de Atención; que brinda una servicio médico ocupacional para distintos rubros o población laboral</p>
+    </div>
+    <div class="nosotros-btn">
+        <div class="leerMas" id="leerMas" href="#myv">Leer Más</div>
+    </div>
+</div>
+<div id="myv" class="myv">
+    <div class="myv-container">
+        <div class="mision">
+            <h3>Mision</h3>
+            <p>Hacer sentir a nuestros pacientes que su salud está en las mejores manos, elevando permanentemente la calidad y eficiencia de nuestro servicio, combinando nuestra calidez en la atención, nuestra pasión por la medicina y la innovación en los
+                procedimientos médicos. Nuestro objetivo principal es brindar a nuestros clientes una atención y servicios en salud de alta calidad, permitiendo que su experiencia positiva sea un factor que nos distinga en nuestro medio.</p>
+        </div>
+        <div class="vision">
+            <h3>Vision</h3>
+            <p>Es ser la red de servicios de salud privada de referencia en el país, De esta manera buscamos ser una institución de clase nacional y líder absoluto en el sector salud peruano en el ámbito privado, y para ello debemos estar al nivel de las
+                Instituciones medica prestigiosas, de referencia nacional e internacional, desarrollando proyectos innovadores y consolidando nuestro liderazgo en satisfacción al cliente, oferta de servicios de salud, rentabilidad, y gestión del capital
+                humano.
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#leerMas').on('click', function() {
+            $('.myv').slideToggle();
+        });
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.nosotros-h2', {
+        duration: 2000,
+        origin: 'right',
+        distance: '-100px'
+    });
+    sr.reveal('.nosotros-p', {
+        duration: 2000,
+        origin: 'right',
+        distance: '-100px'
+    });
+</script>

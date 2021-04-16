@@ -18,61 +18,19 @@
     <link rel="stylesheet" href="css/wpp.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/a8c0e9b6c8.js" crossorigin="anonymous"></script>
-    <script src="js/myv.js"></script>
     <script src="js/scrollreveal.js"></script>
-
+    <script src="js/main.js"></script>
 </head>
 
 <body>
 
     <!-- Pre-header, Header, logo y navbar -->
-    <header id="header" class="header">
-        <nav class="pre-header">
-            <div class="p-h-contenedor">
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i><a href="#contacto">Contáctanos</a></li>
-                    <li><i class="far fa-envelope"></i>admision.trujillo@horizontemedic.com</li>
-                    <li><a class="intranet" href="../views/loginAdmin.html"><i class="fas fa-desktop"></i>Intranet</a></li>
-                </ul>
-                <ul>
-                    <li><i class="fas fa-phone"></i>044 767608</li>
-                    <li><i class="fab fa-whatsapp"></i>969603777 - 990094744</li>
-                </ul>
-            </div>
-        </nav>
-        <div id="barra" class="barra">
-            <div class="contenedor">
-                <div class="logo">
-                    <div class="logo-container">
-                        <a href="#"><img class="logo-img" src="../img/LOGO_color_HM.png" alt=""></a>
-                        <div class="burguer">
-                            <span class="br-1"></span>
-                            <span class="br-2"></span>
-                            <span class="br-3"></span>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navegacion">
-                    <ul>
-                        <li><a style="border: 1px solid #234187;" href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contactanos</a></li>
-                        <li class="active"><a href="../views/loginUser.html">Ingresar</a></li>
-                        <li class="nav-r"><a href="">Especialidades</a></li>
-                        <li class="nav-r"><a href="">Sedes</a></li>
-                        <li class="nav-r"><a href="">Comentarios</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <header id="header" class="header"></header>
 
-    <div class="emergente">
+    <!-- <div class="emergente">
         <input type="checkbox" id="cerrar">
         <label for="cerrar" id="btn-cerrar">X</label>
         <div class="modal">
@@ -80,236 +38,36 @@
                 <img src="img/volante.jpg" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <main>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=+51990094744&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Horizonte%20Medic." class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
         </a>
-        <div class="header-contenido hosp">
-            <div class="contenedor">
-                <div class="slider" id="slider">
-                    <div class="slider__section">
-                        <img src="img/slider/doc-trans-responsive.png" alt="" class="slider__img img-responsive">
-                        <img src="img/slider/Copia_de_seguridad_de_bienvenida-doc-transparencia.png" alt="" class="slider__img img-alfa">
-                    </div>
-                    <div class="slider__section">
-                        <img src="img/sun-in-the-mountains-landscape-vector.jpg" alt="" class="slider__img">
-                    </div>
-                    <div class="slider__section">
-                        <img src="img/vision2.jpg" alt="" class="slider__img">
-                    </div>
-                    <div class="slider__section">
-                        <img src="img/blur-hospital.jpg" alt="" class="slider__img">
-                    </div>
-                </div>
-                <div class="slider__btn slider__btn-right" id="btn-right">&#62;</div>
-                <div class="slider__btn slider__btn-left" id="btn-left">&#60;</div>
-            </div>
-        </div>
+
+        <!-- noticias slider -->
+        <div id="noticias" class="header-contenido hosp"></div>
 
         <!-- menu2-botones -->
-        <section id="especialidades" class="section-1">
-            <ul>
-                <li>
-                    <a href="#contacto">
-                        <i class="icon fas fa-stethoscope"></i> Especialidades
-                    </a>
-                </li>
-                <li>
-                    <a href="#servicios">
-                        <i class="icon fas fa-hospital-symbol"></i> Servicios
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="icon fas fa-map-marked-alt"></i> Sedes
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="icon fas fa-comments"></i> Comentarios
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <section id="menu2" class="section-1"></section>
 
         <!-- seccion-nosotros -->
-        <section id="nosotros" class="nosotros">
-            <div class="nosotros-container">
-                <div class="nosotros-h2">
-                    <h2>¿Quienes Somos?</h2>
-                </div>
-                <div class="nosotros-p">
-                    <p><b>Horizonte Medic</b> es una Institución Privada de un Primer Nivel de Atención; que brinda una servicio médico ocupacional para distintos rubros o población laboral</p>
-                </div>
-                <div class="nosotros-btn">
-                    <div class="leerMas" id="leerMas" href="#myv">Leer Más</div>
-                </div>
-            </div>
-            <div id="myv" class="myv">
-                <div class="myv-container">
-                    <div class="mision">
-                        <h3>Mision</h3>
-                        <p>Hacer sentir a nuestros pacientes que su salud está en las mejores manos, elevando permanentemente la calidad y eficiencia de nuestro servicio, combinando nuestra calidez en la atención, nuestra pasión por la medicina y la innovación
-                            en los procedimientos médicos. Nuestro objetivo principal es brindar a nuestros clientes una atención y servicios en salud de alta calidad, permitiendo que su experiencia positiva sea un factor que nos distinga en nuestro medio.</p>
-                    </div>
-                    <div class="vision">
-                        <h3>Vision</h3>
-                        <p>Es ser la red de servicios de salud privada de referencia en el país, De esta manera buscamos ser una institución de clase nacional y líder absoluto en el sector salud peruano en el ámbito privado, y para ello debemos estar al
-                            nivel de las Instituciones medica prestigiosas, de referencia nacional e internacional, desarrollando proyectos innovadores y consolidando nuestro liderazgo en satisfacción al cliente, oferta de servicios de salud, rentabilidad,
-                            y gestión del capital humano.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="nosotros" class="nosotros"></section>
 
         <!-- servicios -->
-        <section id="servicios" class="servicios">
-            <div class="wrapper">
-                <div class="wrapper-container">
-                    <h2 id="n-s-h2">Nuestros Servicios</h2>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-tooth"></i></div>
-                        </a>
-                        Odontologia
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-low-vision"></i></div>
-                        </a>
-                        Psicometria
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-deaf"></i></div>
-                        </a>
-                        Audiometria
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-lungs"></i></div>
-                        </a>
-                        Espirometria
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-microscope"></i></div>
-                        </a>
-                        Laboratorio Clinico
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-x-ray"></i></div>
-                        </a>
-                        Rayos X
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-brain"></i></div>
-                        </a>
-                        Psicologia
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-eye"></i></div>
-                        </a>
-                        Agudeza Visual
-                    </div>
-                    <div class="single-service">
-                        <a href="">
-                            <div class="social"><i class="fas fa-heartbeat"></i></div>
-                        </a>
-                        Electrocardiograma
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="servicios" class="servicios"></section>
 
         <!-- contacto -->
-        <section id="contacto" class="contacto">
-            <div class="contacto-contenido">
-                <h2>Contactanos</h2>
-            </div>
-            <div class="contacto-container">
-                <div class="contactoInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <h3>Direccion</h3>
-                            <p>Av. Nicolás de Piérola 1106<br>Urb. San Fernando<br>Trujillo</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div class="text">
-                            <h3>Telefono</h3>
-                            <p>044 767608</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="text">
-                            <h3>E-mail</h3>
-                            <p>admision.trujillo@horizontemedic.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contacto-form">
-                    <form action="">
-                        <h2>Enviar Mensaje</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required>
-                            <span>Nombre Completo</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="text" name="" required>
-                            <span>Email</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea name="" id="" required></textarea>
-                            <span>Escribe el mensaje</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Enviar">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+        <section id="contacto" class="contacto"></section>
     </main>
 
-    <footer id="footer" class="footer">
-        <div class="layout">
-            <div class="layout-container">
-                <img src="../img/montanaFooterPng.png" alt="">
-            </div>
-        </div>
-        <div class="relleno-footer">
-            <div class="r-f-container">
-                <div class="txt-footer">
-                    <p>© 2021 Horizonte Medic - Todos los derechos reservados</p>
-                </div>
-                <div class="r-footer">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/HorizonteMedicPeru/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer" class="footer"></footer>
 
     <!-- scripts -->
-    <script src="js/slider-controller.js"></script>
-    <script src="js/animaciones.js"></script>
-    <script src="js/btn-responsive.js"></script>
+    <!-- <script src="js/slider-controller.js"></script> -->
+    <!-- <script src="js/animaciones.js"></script> -->
+    <!-- <script src="js/btn-responsive.js"></script> -->
     <!-- <script src="js/slider-images.js"></script> -->
     <!-- <script src="js/_scroll.js"></script> -->
 </body>

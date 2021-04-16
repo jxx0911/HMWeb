@@ -61,3 +61,25 @@
 .sedesBot p i {
     padding-right: .5rem;
 }
+
+@media screen and (max-width: 950px) {
+    .sedes {
+        display: flex;
+    }
+    .sedesTop {
+        order: -1;
+    }
+    .sedesTop .sedes-img {
+        display: none;
+    }
+    .sedesTop .sedes-map {
+        width: 100%;
+    }
+    .sedesTop .sedes-map iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .sedesBot {
+        order: 1;
+    }
+}

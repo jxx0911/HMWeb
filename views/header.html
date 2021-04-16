@@ -25,19 +25,21 @@
         </div>
         <nav class="navegacion">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contactanos</a></li>
-                <li class="nav-sedes">
-                    <a href="../views/sedes.html">Sedes</a>
-                    <!-- <ul class="nav-sedes-ul">
-                        <li>Trujillo</li>
-                        <li>Huamachuco</li>
-                        <li>Huancayo</li>
-                    </ul> -->
+                <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a style="cursor: default;" href="#" onclick="return false;">Sedes</a>
+                    <div class="submenu-sedes">
+                        <ul>
+                            <li style="padding: 15px 5px;"><a style="font-size: .8rem;" href="../views/sedes.html">Trujillo</a></li>
+                            <li style="padding: 15px 5px;"><a style="font-size: .8rem;" href="">Huamachuco</a></li>
+                            <li style="padding: 15px 5px;"><a style="font-size: .8rem;" href="">Huancayo</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="active"><a href="../views/loginUser.html">Ingresar</a></li>
+                <li class="nav-item"><a href="#contacto">Contactanos</a>
+                </li>
+                <li class="nav-item active"><a href="../views/loginUser.html">Ingresar</a></li>
                 <li class="nav-r"><a href="">Especialidades</a></li>
                 <li class="nav-r"><a href="">Comentarios</a></li>
             </ul>

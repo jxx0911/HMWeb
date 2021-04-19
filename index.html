@@ -28,7 +28,56 @@
 <body>
 
     <!-- Pre-header, Header, logo y navbar -->
-    <header id="header" class="header"></header>
+    <header id="header" class="header">
+        <nav class="pre-header">
+            <div class="p-h-contenedor">
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i><a href="#contacto">Contáctanos</a></li>
+                    <li><i class="far fa-envelope"></i>admision.trujillo@horizontemedic.com</li>
+                    <li><i class="fab fa-whatsapp"></i>969603777 - 990094744</li>
+                </ul>
+                <ul>
+                    <li><i class="fas fa-phone"></i>044 767608</li>
+                    <li><a class="intranet" href="../views/loginAdmin.html"><i class="fas fa-desktop"></i>Intranet</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="barra" class="barra">
+            <div class="contenedor">
+                <div class="logo">
+                    <div class="logo-container">
+                        <a href="../index.html"><img class="logo-img" src="../img/LOGO_color_HM.png" alt=""></a>
+                        <div class="burguer">
+                            <span class="br-1"></span>
+                            <span class="br-2"></span>
+                            <span class="br-3"></span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navegacion">
+                    <ul>
+                        <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a style="cursor: default;" href="#" onclick="return false;">Sedes</a>
+                            <div class="submenu-sedes">
+                                <ul>
+                                    <li style="padding: 15px 5px;"><a id="trujillo" style="font-size: .8rem;" href="../views/sedes.html">Trujillo</a></li>
+                                    <li style="padding: 15px 5px;"><a id="huamachuco" style="font-size: .8rem;" href="">Huamachuco</a></li>
+                                    <li style="padding: 15px 5px;"><a id="huancayo" style="font-size: .8rem;" href="">Huancayo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#contacto">Contactanos</a>
+                        </li>
+                        <li class="nav-item active"><a href="../views/loginUser.html">Ingresar</a></li>
+                        <li class="nav-r"><a href="">Especialidades</a></li>
+                        <li class="nav-r"><a href="">Comentarios</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <!-- <div class="emergente">
         <input type="checkbox" id="cerrar">
@@ -40,28 +89,102 @@
         </div>
     </div> -->
 
-    <main>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=+51990094744&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Horizonte%20Medic." class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
-        </a>
-        <!-- noticias slider -->
-        <div id="noticias" class="header-contenido hosp"></div>
+        </a> -->
 
-        <!-- menu2-botones -->
-        <section id="menu2" class="section-1"></section>
+    <!-- noticias slider -->
+    <!-- <div id="noticias" class="header-contenido hosp"></div> -->
 
-        <!-- seccion-nosotros -->
-        <section id="nosotros" class="nosotros"></section>
+    <!-- menu2-botones -->
+    <!-- <section id="menu2" class="section-1"></section> -->
 
-        <!-- servicios -->
-        <section id="servicios" class="servicios"></section>
+    <!-- seccion-nosotros -->
+    <!-- <section id="nosotros" class="nosotros"></section> -->
 
-        <!-- contacto -->
-        <section id="contacto" class="contacto"></section>
+    <!-- servicios -->
+    <!-- <section id="servicios" class="servicios"></section> -->
+
+    <main id="main">
+
+
+
     </main>
 
-    <footer id="footer" class="footer"></footer>
+    <!-- contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-contenido">
+            <h2>Contactanos</h2>
+        </div>
+        <div class="contacto-container">
+            <div class="contactoInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>Direccion</h3>
+                        <p>Av. Nicolás de Piérola 1106<br>Urb. San Fernando<br>Trujillo</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Telefono</h3>
+                        <p>044 767608</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-desktop"></i></div>
+                    <div class="text">
+                        <h3>E-mail</h3>
+                        <p>admision.trujillo@horizontemedic.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacto-form">
+                <form action="">
+                    <h2>Enviar Mensaje</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Nombre Completo</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="" required></textarea>
+                        <span>Escribe el mensaje</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="layout">
+            <div class="layout-container">
+                <img src="../img/montanaFooterPng.png" alt="">
+            </div>
+        </div>
+        <div class="relleno-footer">
+            <div class="r-f-container">
+                <div class="txt-footer">
+                    <p>© 2021 Horizonte Medic - Todos los derechos reservados</p>
+                </div>
+                <div class="r-footer">
+                    <ul>
+                        <li>
+                            <p>https://www.facebook.com/HorizonteMedicPeru/</p>
+                            <a href="https://www.facebook.com/HorizonteMedicPeru/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- scripts -->
     <!-- <script src="js/slider-controller.js"></script> -->

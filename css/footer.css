@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
 }
 
 .layout-container {
@@ -43,6 +45,13 @@
     flex-direction: row;
     width: 100%;
     margin: .4rem 0;
+}
+
+.r-footer ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
 }
 
 @media screen and (min-width: 950px) {

@@ -3,6 +3,14 @@
     margin: 0 auto;
 }
 
+.header {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+}
+
 
 /* PRE-HEADER */
 
@@ -15,13 +23,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;
     padding: 10px 0;
-    height: 2rem;
+    height: 3rem;
     color: #234187;
-    background: url("../img/cuadrado_transp.png");
+    background: #F5F6F8;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    border-top: 5px solid #234187;
+    border-bottom: 1px solid #dfe5e8;
 }
 
 .pre-header a {
@@ -29,9 +39,11 @@
 }
 
 .pre-header .p-h-contenedor {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .pre-header ul {
@@ -51,25 +63,15 @@
 
 /* HEADER, LOGO Y NAVBAR */
 
+.barra {
+    /* background-color: #fff; */
+    width: 100%;
+    position: sticky;
+}
+
 .barra .contenedor {
     max-width: 75vw;
     margin: 0 auto;
-}
-
-.header {
-    display: flex;
-    position: sticky;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 5;
-}
-
-.barra {
-    position: absolute;
-    /* background-color: #fff; */
-    width: 100%;
-    top: 0rem;
-    margin-top: 2rem;
 }
 
 .barra .contenedor {
@@ -142,6 +144,7 @@
     justify-content: center;
     padding: 15px 20px;
     margin-left: 10px;
+    position: relative;
 }
 
 .navegacion ul li a {

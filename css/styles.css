@@ -29,6 +29,10 @@ li {
     list-style: none;
 }
 
+main {
+    display: flex;
+}
+
 .emergente {
     animation: modal 2s .2s forwards;
     visibility: hidden;

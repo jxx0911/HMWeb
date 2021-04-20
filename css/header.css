@@ -152,7 +152,13 @@
 }
 
 .navegacion ul li.active {
-    outline: 2px solid #234187;
+    background: #234187;
+    border-radius: 25px;
+    /* outline: 2px solid #234187; */
+}
+
+.navegacion ul li.active a {
+    color: #fff;
 }
 
 .navegacion ul li:hover {

@@ -1,7 +1,7 @@
 .hye {
     display: flex;
     width: 100%;
-    height: 10rem;
+    height: 16rem;
     background: #234187;
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +40,7 @@
 .h3-horario,
 .h3-emergencia {
     height: 40%;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: #234187;
 }
@@ -49,5 +49,7 @@
 .p-emergencia {
     height: 60%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #234187;
 }

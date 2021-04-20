@@ -1,0 +1,18 @@
+.covid {
+    display: flex;
+    justify-content: center;
+}
+
+.covid-container {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.covid-title {
+    text-align: center;
+}
+
+.covid-pruebas ul {
+    display: flex;
+    flex-direction: row;
+}

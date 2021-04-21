@@ -32,6 +32,13 @@ li {
 main {
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 6rem;
+}
+
+.sub-main {
+    position: relative;
+    top: 6rem;
 }
 
 .emergente {

@@ -177,16 +177,16 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 18rem;
+    width: 10rem;
+    font-size: .8rem;
 }
 
 .navegacion ul li:hover ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
-    border: .5px solid #234187;
 }
 
 .navegacion ul li ul li:hover {

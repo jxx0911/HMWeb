@@ -7,8 +7,11 @@
 
 .nosotros-title {
     width: 100%;
-    height: 25vh;
-    background: #234187;
+    height: 30vh;
+    background: url("../img/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

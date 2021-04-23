@@ -69,21 +69,22 @@
                 <nav class="navegacion">
                     <ul>
                         <li class="nav-item here"><a href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a href="#Nosotros" id="btnNosotros">Nosotros</a></li>
                         <li class="nav-item">
-                            <a style="cursor: default;" href="#servicios" onclick="return false;">Servicios<i style="padding-left: .5rem;" class="fas fa-chevron-down"></i></a>
+                            <a style="cursor: default;" href="#Servicios" onclick="return false;">Servicios<i style="padding-left: .5rem;" class="fas fa-chevron-down"></i></a>
                             <ul>
-                                <li><a href="">Servicios Generales</a></li>
-                                <li><a href="">Salud Ocupacional</a></li>
-                                <li><a href="">Laboratorio</a></li>
+                                <li><a href="#ServiciosGenerales" id="btnSG">Servicios Generales</a></li>
+                                <li><a href="#SaludOcupacional" id="btnSO">Salud Ocupacional</a></li>
+                                <li><a href="#laboratorio" id="btnLab">Laboratorio</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a style="cursor: default;" href="#" onclick="return false;">Sedes<i style="padding-left: .5rem;" class="fas fa-chevron-down"></i></a>
                             <ul>
-                                <li><a href="">Trujillo</a></li>
-                                <li><a href="">Huamachuco</a></li>
-                                <li><a href="">Huancayo</a></li>
+                                <li><a href="#Pierola" id="btnPierola">Sede N. Pierola</a></li>
+                                <li><a href="#StoDominguito" id="btnSD">Sede Sto. Dominguito</a></li>
+                                <li><a href="#Huamachuco" id="btnH">Sede Huamachuco</a></li>
+                                <li><a href="#Huancayo" id="btnHy">Sede Huancayo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#contacto">Cotizar</a></li>
@@ -98,25 +99,53 @@
 
     <!-- main -->
     <main id="main">
-        <div class="sedes">
-            <div class="sedes-info">
-                <div class="sedes-info-void"></div>
-                <div class="sedes-info-txt">
-                    <h2>Bienvenido a nuestra <br>sede Huancayo</h2>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>Av. Huancavelica Nº2225<br>
-                        <i class="far fa-clock"></i>Lunes a Sábado 7:00am - 7:00pm <br>
-                        <i class="fas fa-phone-alt"></i>(044) 659554 <br>
-                    </p>
+        <!-- slider -->
+        <div class="slider-contenedor">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="img/slider/doc-trans-responsive.png" alt="" class="slider__img img-responsive">
+                    <img src="img/slider/Copia_de_seguridad_de_bienvenida-doc-transparencia.png" alt="" class="slider__img img-alfa">
+                </div>
+                <div class="slider__section">
+                    <img src="img/sun-in-the-mountains-landscape-vector.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="img/vision2.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="img/blur-hospital.jpg" alt="" class="slider__img">
                 </div>
             </div>
-            <div class="sedes-map">
-                <div class="sedes-map-title">
-                    <h2><i class="fas fa-map-marked-alt"></i> ¿Como llegar?</h2>
+            <div class="slider__btn slider__btn-right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn-left" id="btn-left">&#60;</div>
+        </div>
+        <!-- horario y numero de emergencia -->
+        <div class="hye">
+            <div class="hye-container">
+                <div class="caja-horario">
+                    <div class="h3-horario"><i class="fas fa-clock"></i>HORARIO</div>
+                    <div class="p-horario">
+                        <p>Lunes - Sabado <br> 7:00 a.m. - 7:00 p.m.</p>
+                    </div>
                 </div>
-                <div class="sedes-map-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.954160865516!2d-75.22926343479489!3d-12.049828605761952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9619dbd26dcf%3A0x7a1e251da584bf3e!2sAv.%20Huancavelica%202225%2C%20Huancayo%2012006!5e0!3m2!1ses-419!2spe!4v1619197763964!5m2!1ses-419!2spe"
-                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="caja-emergencia">
+                    <div class="h3-emergencia"><i class="fas fa-hospital-symbol"></i>EN CASO DE EMERGENCIA</div>
+                    <div class="p-emergencia">
+                        <p><i class="fas fa-mobile-alt"></i>990094744 <br> <i class="fas fa-phone-volume"></i>(044) 767608</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nosotros - we-->
+        <div class="we">
+            <div class="we-container">
+                <div class="we-info">
+                    <h2>¿Quienes Somos?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur officia odit. Quis officia exercitationem amet sit non minus nam ipsam dolor. Perspiciatis nostrum dolor at consectetur, doloribus officiis nisi.</p>
+                    <button><i class="fas fa-arrow-alt-circle-right"></i>MÁS INFORMACIÓN</button>
+                </div>
+                <div class="we-img">
+                    <img src="img/doctors.png" alt="">
                 </div>
             </div>
         </div>
@@ -155,54 +184,6 @@
 
         <!-- contacto -->
         <section id="contacto" class="contacto">
-            <!-- <div class="contacto-contenido">
-                <h2>Contactanos</h2>
-            </div>
-            <div class="contacto-container">
-                <div class="contactoInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <h3>Sede Central</h3>
-                            <p>Calle Guillermo Prescott 127<br>Urb. Santo Dominguito<br>Trujillo</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div class="text">
-                            <h3>Telefono</h3>
-                            <p>(044) 666120</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="text">
-                            <h3>E-mail</h3>
-                            <p>admision.trujillo@horizontemedic.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contacto-form">
-                    <form action="">
-                        <h2>Enviar Mensaje</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required>
-                            <span>Nombre Completo</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="text" name="" required>
-                            <span>Email</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea name="" id="" required></textarea>
-                            <span>Escribe el mensaje</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Enviar">
-                        </div>
-                    </form>
-                </div>
-            </div> -->
             <section class="cantact_info">
                 <section class="info_title">
                     <span><i class="fas fa-laptop-medical"></i></span>
@@ -263,6 +244,7 @@
     <!-- scripts -->
     <script src="js/slider-controller.js"></script>
     <script src="js/_scroll.js"></script>
+    <script src="js/cargar.js"></script>
     <!-- <script src="js/animaciones.js"></script> -->
     <!-- <script src="js/btn-responsive.js"></script> -->
     <!-- <script src="js/slider-images.js"></script> -->

@@ -43,4 +43,23 @@ $(document).ready(function() {
         up();
         $('#main').load('../views/sedes/sedeHuancayo.html');
     });
+
+    // zona covid 
+
+    // prueba rapida 
+    $('#btnRapida').click(function() {
+        $('#covid-container').load('../views/covid/rapida.html');
+    });
+    // prueba serologica
+    $('#btnSerologica').click(function() {
+        $('#covid-container').load('../views/covid/serologica.html');
+    });
+    // prueba de antigeno 
+    $('#btnAntigeno').click(function() {
+        $('#covid-container').load('../views/covid/antigeno.html');
+    });
+    // prueba molecular 
+    $('#btnMolecular').click(function() {
+        $('#covid-container').load('../views/covid/molecular.html');
+    });
 })

@@ -76,34 +76,23 @@
     padding: 5px 100px;
     background: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 .barra .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 75vw;
     min-width: 1100px;
     height: 100%;
     margin: 0 auto;
 }
 
-.barra .contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 75vw;
-    margin: 0 auto;
-}
-
 
 /* logo */
 
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo .burguer {
+.burguer {
     display: none;
     border: transparent;
     margin: 0;
@@ -116,12 +105,12 @@
     background-color: #212C7C;
     height: 3px;
     width: 28px;
-    margin: 5px auto;
+    margin: 2.5px auto;
     border-radius: 2px;
 }
 
 .logo-img {
-    max-width: 15rem;
+    width: 15rem;
     padding: 10px 0;
 }
 
@@ -198,25 +187,6 @@
     box-sizing: border-box;
 }
 
-
-/* .navegacion ul li ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: .5rem;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #004b95, #234187, #212C7C);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-}
-
-.navegacion ul li ul li a:hover::before {
-    transform: scaleX(1);
-} */
-
 .navegacion ul li ul li a {
     transition: .5s all ease;
 }
@@ -233,39 +203,113 @@
 
 /* Media Query para el logo y el navbar */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1115px) {
     .pre-header ul li a.intranet {
         display: none;
     }
     .p-h-contenedor {
         min-width: 800px;
     }
+    .barra .contenedor {
+        min-width: 800px;
+    }
+    .barra.sticky {
+        top: 0;
+        padding: 5px 100px;
+        background: #fff;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    .navegacion ul>li>a {
+        font-size: .9rem;
+        margin: 10px 5px;
+        border-radius: 25px;
+        padding: 15px 15px;
+    }
+    .logo-img {
+        width: 12rem;
+        padding: 10px 0;
+        margin-top: .5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
     .logo {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
     .logo-container {
-        width: 500%;
-        min-width: 500px;
-        margin: 0 auto;
         display: flex;
-    }
-    .navegacion {
-        display: none;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 780px;
+        min-width: 400px;
+        margin: 0 auto;
     }
     .logo .burguer {
-        display: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-size: 2rem;
         cursor: pointer;
         transition: .2s .1s;
-        z-index: 20;
-    }
-    .logo .burguer:hover {
-        transform: rotate(360deg);
     }
     .barra .contenedor {
-        min-width: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: calc(100vh - 2rem);
+    }
+    .navegacion {
+        width: 98%;
+        position: sticky;
+        display: none;
+        opacity: 0;
+        z-index: 2;
+    }
+    .navegacion ul {
+        flex-direction: column;
+        background: #234187;
+    }
+    .navegacion ul li {
+        padding: 1.26rem 0;
+    }
+    .navegacion ul li.active a,
+    .navegacion ul li a {
+        color: #fff;
+    }
+    .navegacion ul li.active a:hover,
+    .navegacion ul li a:hover {
+        padding: 2px 10px;
+        transition: .2s;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+    .navegacion ul li.active a {
+        color: #fff;
+        background: transparent;
+    }
+    .navegacion ul li.nav-r {
+        display: initial;
+    }
+    @keyframes muestraMenu {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .br-1.animado {
+        transform: rotate(-45deg) translate(-6.5px, 5px);
+    }
+    .br-2.animado {
+        opacity: 0;
+    }
+    .br-3.animado {
+        transform: rotate(45deg) translate(-6.5px, -5px);
+    }
+    .navegacion.activado {
+        display: initial;
+        animation: muestraMenu 350ms ease-in-out both;
     }
 }
 
@@ -365,27 +409,6 @@
         display: none;
         opacity: 0;
         z-index: 10;
-    }
-    @keyframes muestraMenu {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    .br-1.animado {
-        transform: rotate(-45deg) translate(-6.5px, 5px);
-    }
-    .br-2.animado {
-        opacity: 0;
-    }
-    .br-3.animado {
-        transform: rotate(45deg) translate(-6.5px, -5px);
-    }
-    .navegacion.activado {
-        display: initial;
-        animation: muestraMenu 350ms ease-in-out both;
     }
     .navegacion ul {
         /* display: none; */

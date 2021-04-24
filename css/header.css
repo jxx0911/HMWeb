@@ -16,6 +16,7 @@
 .p-h-contenedor {
     max-width: 75vw;
     margin: 0 auto;
+    min-width: 1100px;
 }
 
 .pre-header {
@@ -42,7 +43,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .pre-header ul {
@@ -80,6 +80,7 @@
 
 .barra .contenedor {
     max-width: 75vw;
+    min-width: 1100px;
     height: 100%;
     margin: 0 auto;
 }
@@ -145,31 +146,37 @@
     color: #234187;
     font-size: 1.08rem;
     font-weight: 500;
-    border-radius: 5px;
 }
 
 .navegacion ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 20px;
-    margin-left: 10px;
-    border-radius: 25px;
     position: relative;
+    height: 100%;
 }
 
-.navegacion ul li:hover {
-    transform: translateY(-2px);
-    border: .5px solid #234187;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    transition: .3s ease;
+.navegacion ul>li>a {
+    margin: 10px 5px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    color: #234187;
 }
 
-.navegacion ul li.active:hover {
-    border-bottom: none;
-    transform: translateY(-5px);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    transition: .1s ease;
+.navegacion ul>li>.nav-item:hover {
+    background: #234187;
+    color: #fff;
+}
+
+.navegacion ul>li>.nav-item.here {
+    background: #234187;
+    color: #fff;
+}
+
+.navegacion ul li .active {
+    background: #234187;
+    color: #fff;
+    /* outline: 2px solid #234187; */
 }
 
 .navegacion ul li ul {
@@ -177,7 +184,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 10rem;
+    width: 12rem;
     font-size: .8rem;
 }
 
@@ -185,17 +192,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
 }
 
-.navegacion ul li ul li:hover {
-    box-shadow: none;
-    border: none;
-    transform: none;
-}
 
-.navegacion ul li ul li a::before {
+/* .navegacion ul li ul li a::before {
     content: '';
     position: absolute;
     bottom: .5rem;
@@ -211,27 +214,7 @@
 
 .navegacion ul li ul li a:hover::before {
     transform: scaleX(1);
-}
-
-.navegacion ul li a {
-    color: #234187;
-}
-
-.navegacion ul li.here {
-    border: .5px solid #234187;
-    transform: translateY(-2px);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.navegacion ul li.active {
-    background: #234187;
-    border-radius: 25px;
-    /* outline: 2px solid #234187; */
-}
-
-.navegacion ul li.active a {
-    color: #fff;
-}
+} */
 
 .navegacion ul li.nav-r {
     display: none;
@@ -240,30 +223,55 @@
 
 /* Media Query para el logo y el navbar */
 
-@media screen and (max-width: 1250px) {
-    .pre-header .p-h-contenedor {
+@media screen and (max-width: 1100px) {
+    .pre-header ul li a.intranet {
+        display: none;
+    }
+    .p-h-contenedor {
+        min-width: 800px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo-container {
+        width: 500%;
+        min-width: 500px;
         margin: 0 auto;
+        display: flex;
+    }
+    .navegacion {
+        display: none;
+    }
+    .logo .burguer {
+        display: initial;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .2s .1s;
+        z-index: 20;
+    }
+    .logo .burguer:hover {
+        transform: rotate(360deg);
     }
     .barra .contenedor {
-        margin: 0 auto;
-    }
-    .navegacion ul li {
-        padding: 15px 8px;
-        margin-left: 10px;
+        min-width: none;
     }
 }
 
-@media screen and (max-width: 950px) {
+
+/* @media screen and (max-width: 950px) {
     .logo-img {
         max-width: 13rem;
         padding: 10px 0;
     }
-}
+} */
 
 
 /* media query para distintas resoluciones */
 
-@media screen and (max-width: 1050px) {
+
+/* @media screen and (max-width: 1050px) {
     .pre-header .p-h-contenedor {
         max-width: 700px;
         margin: 0 auto;
@@ -313,18 +321,9 @@
     .pre-header {
         font-size: .6rem;
     }
-}
+} */
 
 @media screen and (max-width: 760px) {
-    .pre-header ul li a.intranet {
-        display: none;
-    }
-    .pre-header .p-h-contenedor {
-        max-width: 600px;
-        margin: 0 auto;
-        flex-direction: column;
-        justify-content: center;
-    }
     .pre-header {
         font-size: .7rem;
         height: 2.8rem;
@@ -340,20 +339,6 @@
     }
     .contenedor {
         width: 100%;
-    }
-    .logo-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .logo .burguer {
-        display: initial;
-        font-size: 2rem;
-        cursor: pointer;
-        transition: .2s .1s;
-        z-index: 20;
-    }
-    .logo .burguer:hover {
-        transform: rotate(360deg);
     }
     .barra .contenedor {
         flex-direction: column;

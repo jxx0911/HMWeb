@@ -228,6 +228,7 @@
     }
     .logo-img {
         width: 18rem;
+        height: 100%;
     }
     .barra .burguer {
         display: flex;
@@ -236,11 +237,6 @@
         top: 2rem;
         font-size: 2rem;
         color: #234187;
-    }
-    .barra .contenedor {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: calc(100vh - 2rem);
     }
     .navegacion {
         width: 98%;

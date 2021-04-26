@@ -54,11 +54,19 @@
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
     .slider {
-        height: 350px;
         z-index: -1;
     }
+    .slider-contenedor {
+        height: 350px;
+    }
+    .slider__btn {
+        top: 14%;
+    }
+}
+
+@media screen and (max-width: 560px) {
     .img-responsive {
         display: initial;
     }

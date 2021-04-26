@@ -5,6 +5,7 @@
     font-family: 'Roboto', sans-serif;
     color: #234187;
     padding-top: 4rem;
+    margin: 0 auto;
 }
 
 .covid-container {
@@ -27,6 +28,8 @@
 
 .covid-pruebas {
     width: 60vw;
+    min-width: 489px;
+    margin: 0 auto;
 }
 
 .covid-pruebas ul {
@@ -39,10 +42,10 @@
 
 .covid-pruebas ul li {
     cursor: pointer;
-    border: 2px solid #234187;
-    flex: 0 0 13rem;
-    margin: 5px 0;
-    padding: 20px 0;
+    outline: 2px solid #234187;
+    flex: 0 0 10rem;
+    margin: 5px 15px;
+    padding: 20px 15px;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
@@ -60,21 +63,16 @@
     color: #fff;
 }
 
-.covid-info {
-    display: flex;
-    flex-direction: row;
-}
-
 .covid-info .covid-container {
     /* border: 1px solid black; */
     width: 68vw;
     height: 25rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .covid-info-txt {
-    flex: 0 0 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -95,7 +93,7 @@
 /* .covid-info-txt-container p {} */
 
 .covid-info-img {
-    flex: 0 0 50%;
+    width: 60%;
     height: 100%;
     box-shadow: 0 0 20px black;
     border-radius: 26px;
@@ -107,4 +105,94 @@
     height: 100%;
     object-fit: cover;
     border-radius: 26px;
+}
+
+
+/* media querys */
+
+@media screen and (max-width: 1115px) {
+    .covid-pruebas ul li {
+        flex: 0 0 10rem;
+        margin: 5px 10px;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .covid-info .covid-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .covid-info-txt {
+        width: 100%;
+        height: 15rem;
+        order: 1;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .covid-info-img {
+        width: 100%;
+        height: 100%;
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .covid {
+        padding-top: 0;
+    }
+    .covid-info {
+        height: 80vh;
+    }
+    .covid-info .covid-container {
+        height: 100%;
+    }
+    .covid-title h2 {
+        font-size: 1.5rem;
+    }
+    .covid-title h2 b {
+        font-size: 3.3rem;
+    }
+    .covid-pruebas ul {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .covid-pruebas ul li {
+        flex: 0 0 14rem;
+        margin: 5px 10px;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .covid-info-txt {
+        order: 2;
+        height: 20rem;
+    }
+    .covid-info-txt p {
+        height: 100%;
+    }
+    .covid-info-img {
+        order: 1;
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .covid-pruebas {
+        min-width: 200px;
+    }
+    .covid-info {
+        height: 80vh;
+    }
+    .covid-info .covid-container {
+        height: 100%;
+    }
+    .covid-info-img {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .covid-info-img {
+        height: 10rem;
+    }
 }

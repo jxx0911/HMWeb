@@ -62,7 +62,13 @@
         height: 350px;
     }
     .slider__btn {
-        top: 12%;
+        top: 11%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .slider__btn {
+        top: 13%;
     }
 }
 

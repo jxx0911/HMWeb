@@ -45,6 +45,7 @@
     margin: 10px;
     text-align: center;
     transition: all 0.25s;
+    border: .5px solid #234187;
 }
 
 .container-tarjetas .card:hover {
@@ -76,4 +77,16 @@
     color: #234187;
     padding: 8px 15px;
     border: 1px solid #234187;
+}
+
+@media screen and (max-width: 860px) {
+    .s-g-title {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .s-g-title h2 {
+        font-size: 3rem;
+    }
 }

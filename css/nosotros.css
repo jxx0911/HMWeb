@@ -30,6 +30,7 @@
 
 .nosotros-logo-container {
     max-width: 45vw;
+    min-width: 270px;
     margin: 0 auto;
 }
 
@@ -47,4 +48,19 @@
     max-width: 75vw;
     margin: 0 auto;
     text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+    .nosotros-title {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nosotros-title h2 {
+        font-size: 3rem;
+    }
+    .nosotros-logo-container img {
+        padding: 4rem 0;
+    }
 }

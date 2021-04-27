@@ -141,10 +141,9 @@
     color: #fff;
 }
 
-.navegacion ul li .active {
+.navegacion ul li .login {
     background: #234187;
     color: #fff;
-    /* outline: 2px solid #234187; */
 }
 
 .navegacion ul li ul {
@@ -236,17 +235,27 @@
         height: 100%;
     }
     .barra .burguer {
+        cursor: pointer;
         display: block;
         position: absolute;
         right: 1rem;
-        top: 2rem;
+        top: 1.5rem;
+        padding-top: .4rem;
+        border-radius: 10px;
         font-size: 2rem;
-        color: #234187;
+        background: #234187;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        text-align: center;
         transition: right 0.4s ease;
-        margin-right: 10px;
+        margin-right: 6px;
     }
     .barra .burguer.click {
-        right: 260px;
+        right: 250px;
+    }
+    .barra .burguer.click i::before {
+        content: '<i class="fas fa-times"></i>';
     }
     .navegacion {
         display: none;
@@ -254,8 +263,8 @@
     .nav-resp {
         display: flex;
         position: fixed;
-        right: -260px;
-        width: 260px;
+        right: -250px;
+        width: 250px;
         height: 100%;
         background: #234187;
         transition: right .4s ease;
@@ -284,7 +293,7 @@
         width: 100%;
         border-left: 3px solid transparent;
     }
-    .nav-resp ul li.active a {
+    .nav-resp>ul>li.active>a {
         background: #fff;
         color: #234187;
         border-left-color: #234187;
@@ -331,137 +340,10 @@
     }
 }
 
-
-/* @media screen and (max-width: 950px) {
+@media screen and (max-width: 380px) {
     .logo-img {
-        max-width: 13rem;
-        padding: 10px 0;
-    }
-} */
-
-
-/* media query para distintas resoluciones */
-
-
-/* @media screen and (max-width: 1050px) {
-    .pre-header .p-h-contenedor {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    .pre-header {
-        font-size: .7rem;
-    }
-    .pre-header ul li i {
-        font-size: .9rem;
-        padding-right: 5px;
-    }
-    .navegacion {
-        flex: 0 0 5rem;
-    }
-    .navegacion ul {
-        margin-left: 1rem;
-        font-size: .8rem;
-    }
-    .navegacion ul li {
-        padding: 15px 5px;
-        margin-left: 10px;
-    }
-    .pre-header .contenedor {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    .barra .contenedor {
-        max-width: 700px;
-        margin: 0 auto;
+        width: 13rem;
+        height: 90%;
+        padding-top: 1rem;
     }
 }
-
-@media screen and (max-width: 950px) {
-    .navegacion {
-        flex: 0 0 11rem;
-    }
-    .navegacion ul li.nav-r {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 815px) {
-    .pre-header .p-h-contenedor {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .pre-header {
-        font-size: .6rem;
-    }
-} */
-
-
-/* @media screen and (max-width: 760px) {
-    .pre-header {
-        font-size: .7rem;
-        height: 2.8rem;
-    }
-    .pre-header ul {
-        justify-content: center;
-    }
-    .pre-header ul li {
-        padding-right: 5px;
-    }
-    .pre-header ul li i {
-        font-size: .8rem;
-    }
-    .contenedor {
-        width: 100%;
-    }
-    .barra .contenedor {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: calc(100vh - 2rem);
-        margin-top: .5rem;
-    }
-    .header-contenido {
-        z-index: 1;
-    }
-    .navegacion {
-        width: 100%;
-        position: sticky;
-        display: none;
-        opacity: 0;
-        z-index: 10;
-    }
-    .navegacion ul {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        top: -7.1rem;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        background: #004b95;
-        height: calc(100vh - 2rem);
-    }
-    .navegacion ul li {
-        padding: 1rem 0;
-    }
-    .navegacion ul li.active a,
-    .navegacion ul li a {
-        font-size: 1.5rem;
-        color: #fff;
-        background: transparent;
-    }
-    .navegacion ul li a:hover {
-        padding: 10px 30px;
-        transition: .2s;
-        border: 1px solid #fff;
-        border-radius: 5px;
-    }
-    .navegacion ul li.active a:hover {
-        color: #212C7C;
-        background: #fff;
-        border: 1px solid #212C7C;
-    }
-    .navegacion ul li.nav-r {
-        display: initial;
-    }
-} */

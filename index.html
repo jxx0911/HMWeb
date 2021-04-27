@@ -60,7 +60,7 @@
                         <img class="logo-img" src="../img/LOGO_color_HM.png" alt="Horizonte Medic">
                     </a>
                 </h1>
-                <i class="fas fa-bars burguer "></i>
+                <i id="burguer" class="fas fa-bars burguer "></i>
                 <!-- navbar -->
                 <nav class="navegacion">
                     <ul>
@@ -87,6 +87,29 @@
                         <li><a class="active" href="../views/loginUser.html">Ingresar</a></li>
                         <li class="nav-r"><a href="">Especialidades</a></li>
                         <li class="nav-r"><a href="">Comentarios</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-resp">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../views/loginUser.html">Ingresar</a></li>
+                        <li><a href="#contacto">Cotizar</a></li>
+                        <li><a href="#Nosotros">Nosotros</a></li>
+                        <li><a style="cursor: default;" href="#Servicios" onclick="return false;" class="serv-resp">Servicios<i class="fas fa-chevron-down first"></i></a>
+                            <ul class="serv-show">
+                                <li><a href="#ServiciosGenerales">Servicios Generales</a></li>
+                                <li><a href="#SaludOcupacional">Salud Ocupacional</a></li>
+                                <li><a href="#laboratorio">Laboratorio</a></li>
+                            </ul>
+                        </li>
+                        <li><a style="cursor: default;" href="#" onclick="return false;" class="sede-resp">Sedes<i class="fas fa-chevron-down second"></i></a>
+                            <ul class="sede-show">
+                                <li><a href="#Pierola">Sede N. Pierola</a></li>
+                                <li><a href="#StoDominguito">Sede Sto. Dominguito</a></li>
+                                <li><a href="#Huamachuco">Sede Huamachuco</a></li>
+                                <li><a href="#Huancayo">Sede Huancayo</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -241,6 +264,7 @@
     <script src="js/slider-controller.js"></script>
     <script src="js/_scroll.js"></script>
     <script src="js/cargar.js"></script>
+    <script src="js/sidebar.js"></script>
     <!-- <script src="js/animaciones.js"></script> -->
     <script src="js/btn-responsive.js"></script>
     <!-- <script src="js/slider-images.js"></script> -->

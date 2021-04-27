@@ -72,7 +72,7 @@
 }
 
 .covid-info-txt {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
 /* .covid-info-txt-container p {} */
 
 .covid-info-img {
-    width: 60%;
+    width: 40%;
     height: 100%;
     box-shadow: 0 0 20px black;
     border-radius: 26px;

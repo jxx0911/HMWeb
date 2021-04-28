@@ -111,7 +111,7 @@
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     color: #234187;
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     font-weight: 500;
 }
 
@@ -187,19 +187,25 @@
 
 @media screen and (max-width: 1115px) {
     .pre-header ul li {
-        font-size: .74rem;
+        font-size: .7087rem;
+    }
+    .pre-header ul li i {
+        font-size: .902rem;
     }
     .p-h-contenedor {
-        min-width: 800px;
+        min-width: 835px;
     }
     .barra .contenedor {
-        min-width: 800px;
+        min-width: 835px;
     }
     .barra.sticky {
         top: 0;
         margin: 0 auto;
         background: #fff;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    .navegacion ul {
+        font-size: .9;
     }
     .navegacion ul>li>a {
         font-size: .85rem;
@@ -215,12 +221,6 @@
 }
 
 @media screen and (max-width: 860px) {
-    /* .pre-header ul:nth-child(1) {
-        order: 2;
-    }
-    .pre-header ul:nth-child(2) {
-        order: 1;
-    } */
     .barra {
         top: 0;
     }
@@ -301,6 +301,7 @@
     .nav-resp ul ul {
         position: static;
         display: none;
+        transition: .4s ease;
     }
     .nav-resp ul .serv-show.show {
         display: block;
@@ -335,7 +336,7 @@
         transform: translateY(-50%);
         transition: transform .4s;
     }
-    nav ul li a i.rotate {
+    .nav-resp ul li a i.rotate {
         transform: translateY(-50%) rotate(-180deg);
     }
 }

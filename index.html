@@ -135,14 +135,16 @@
                         </div>
                         <div class="form-cita-item">
                             <label>Tipo de Documento*</label>
-                            <label>
-                                <input name="documento" type="radio">
-                                Pasaporte
-                            </label>
-                            <label>
-                                <input name="documento" type="radio">
-                                D.N.I.
-                            </label>
+                            <div class="form-row">
+                                <label>
+                                    <input name="documento" type="radio">
+                                    Pasaporte
+                                </label>
+                                <label>
+                                    <input name="documento" type="radio">
+                                    D.N.I.
+                                </label>
+                            </div>
                         </div>
                         <div class="form-cita-item">
                             <label>Nro. Documento*</label>
@@ -150,14 +152,16 @@
                         </div>
                         <div class="form-cita-item">
                             <label>Sexo</label>
-                            <labe>
-                                <input name="sexo" type="radio">
-                                Hombre
-                            </labe>
-                            <labe>
-                                <input name="sexo" type="radio">
-                                Mujer
-                            </labe>
+                            <div class="form-row">
+                                <label>
+                                    <input name="sexo" type="radio">
+                                    Hombre
+                                </label>
+                                <label>
+                                    <input name="sexo" type="radio">
+                                    Mujer
+                                </label>
+                            </div> 
                         </div>
                         <div class="form-cita-item">
                             <label>Fecha de Nacimiento</label>
@@ -188,11 +192,12 @@
                                 <option value="servicios-generales">Servicios Generales</option>
                                 <option value="salud-ocupacional">Salud Ocupacional</option>
                                 <option value="laboratorio">Laboratorio</option>
+                                <option value="covid">Covid-19</option>
                             </select>
                         </div>
                         <div class="form-cita-item">
                             <label>Especialidad</label>
-                            <input type="list" list="especialidad-list-so">
+                            <input type="list" list="especialidad-list-sg">
                             <datalist id="especialidad-list-sg">
                                 <option value="Medicina General"></option>
                                 <option value="Ginecologia"></option>
@@ -215,17 +220,28 @@
                                 <option value="Exámen para obtener licencia para portar armas"></option>
                                 <option value="Exámen para obtener licencia de conducir"></option>
                             </datalist>
-                            <datalist id="especialidad-list-so">
-                                    <option value="Medicina General"></option>
-                                    <option value="Ginecologia"></option>
-                                    <option value="Pediatria"></option>
-                                    <option value="Cirugia General"></option>
-                                    <option value="Medicina Interna"></option>
-                                    <option value="Gastroenterologia"></option>
-                                    <option value="Cardiologia"></option>
-                                    <option value="Oftalmologia"></option>
-                                    <option value="Radiologia"></option>
+                            <!-- <datalist id="especialidad-list-so">
+                                    <option value="Exámenes preocupacional"></option>
+                                    <option value="Exámenes periódicos"></option>
+                                    <option value="Exámenes de retiro"></option>
+                                    <option value="Exámenes para conducción de vehículos"></option>
+                                    <option value="Exámenes de altura"></option>
+                                    <option value="Exámenes para trabajos en caliente"></option>
+                                    <option value="Exámenes para espacio confinados"></option>
+                                    <option value="Exámenes para trabajos de alto riesgo"></option>
+                                    <option value="Fist Test"></option>
                             </datalist>
+                            <datalist id="laboratorio">
+                                <option value="Laboratorio Clínico"></option>
+                                <option value="Rayos X"></option>
+                                <option value="Ecografías"></option>
+                            </datalist>
+                            <datalist id="covid">
+                                <option value="Prueba Rápida"></option>
+                                <option value="Serológica"></option>
+                                <option value="Antígeno"></option>
+                                <option value="Molecular"></option>
+                            </datalist> -->
                         </div>
                         <div class="form-cita-item">
                             <label>Fecha de Reservación</label>

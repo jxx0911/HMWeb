@@ -1,4 +1,33 @@
 .cita {
     width: 100%;
     border: 1px solid black;
+    font-family: 'Roboto',sans-serif;
+}
+
+.cita-container{
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cita-title{
+    align-self: center;
+}
+
+.form-cita{
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset{
+    width: 50%;
+    margin: 0 2rem;
+    border: none;
+}
+
+.form-cita-item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
 }

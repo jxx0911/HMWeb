@@ -60,6 +60,10 @@ fieldset{
     border: none;
 }
 
+.form-cita fieldset.form-resp{
+    display: none;
+}
+
 fieldset .span{
     margin-top: 4rem;
 }
@@ -115,4 +119,51 @@ fieldset>div>label{
 .form-cita button:hover{
     background: #fff;
     color: #234187;
+}
+
+@media screen and (max-width: 1000px){
+    .cita-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    fieldset{
+        width: 100%;
+        padding: 100px 50px;
+        min-width: 295px;
+    }
+    .form-cita{
+        margin-top: 0;
+    }
+    .cita-img{
+        display: none;
+    }
+    .label-1,.label-2{
+        left: 0;
+        right: 0;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .form-cita{
+        flex-direction: column;
+    }
+    .form-cita button{
+        margin: 0 auto;
+        right: 31%;
+        left: 30%;
+    }
+    .form-cita fieldset.form-desk{
+        display: none;
+    }
+    .form-cita fieldset.form-resp{
+        display: block;
+        margin: 0 auto;
+    }
+    .form-cita fieldset.form-resp.bottom{
+        padding-top: 0;
+    }
+    .label-2{
+        bottom: 28.5rem;
+    }
 }

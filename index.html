@@ -119,19 +119,24 @@
     <!-- main -->
     <main id="main">
         <div class="cita">
+            <div class="cita-title">
+                <h2>RESERVA TU CITA</h2>
+            </div>
             <div class="cita-container">
-                <div class="cita-title">
-                    <h2>Reserva tu cita</h2>
-                </div>
                 <form class="form-cita" action="">
+                    <label class="label-1">1. Datos del paciente</label>
+                    <label class="label-2">2. Reservación</label>
+                    <div class="cita-img">
+                        <img src="../img/cita/doc-form.jpg" alt="">
+                    </div>
                     <fieldset>
                         <div class="form-cita-item">
                             <label>Nombres*</label>
                             <input type="text">
                         </div>
                         <div class="form-cita-item">
-                            <label>Apellidos*</label>
-                            <input type="text">
+                            <label>Correo Electronico</label>
+                            <input type="email">
                         </div>
                         <div class="form-cita-item">
                             <label>Tipo de Documento*</label>
@@ -147,52 +152,16 @@
                             </div>
                         </div>
                         <div class="form-cita-item">
-                            <label>Nro. Documento*</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-cita-item">
-                            <label>Sexo</label>
-                            <div class="form-row">
-                                <label>
-                                    <input name="sexo" type="radio">
-                                    Hombre
-                                </label>
-                                <label>
-                                    <input name="sexo" type="radio">
-                                    Mujer
-                                </label>
-                            </div> 
-                        </div>
-                        <div class="form-cita-item">
                             <label>Fecha de Nacimiento</label>
                             <input type="date">
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-cita-item">
-                            <label>Correo Electronico</label>
-                            <input type="email">
-                        </div>
-                        <div class="form-cita-item">
-                            <label>Telefono</label>
-                            <input type="tel">
-                        </div>
-                        <div class="form-cita-item">
+                        <div class="form-cita-item span">
                             <label>Sede</label>
                             <select name="sede" id="sede">
                                 <option value="pierola">Pierola</option>
                                 <option value="stodominguito">Sto. Dominguito</option>
                                 <option value="huamachuco">Huamachuco</option>
                                 <option value="huancayo">Huancayo</option>
-                            </select>
-                        </div>
-                        <div class="form-cita-item">
-                            <label>Servicio</label>
-                            <select name="servicio" id="servicio">
-                                <option value="servicios-generales">Servicios Generales</option>
-                                <option value="salud-ocupacional">Salud Ocupacional</option>
-                                <option value="laboratorio">Laboratorio</option>
-                                <option value="covid">Covid-19</option>
                             </select>
                         </div>
                         <div class="form-cita-item">
@@ -243,11 +212,48 @@
                                 <option value="Molecular"></option>
                             </datalist> -->
                         </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-cita-item">
+                            <label>Apellidos*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-cita-item">
+                            <label>Telefono</label>
+                            <input type="tel">
+                        </div>
+                        <div class="form-cita-item">
+                            <label>Nro. Documento*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-cita-item">
+                            <label>Sexo</label>
+                            <div class="form-row">
+                                <label>
+                                    <input name="sexo" type="radio">
+                                    Hombre
+                                </label>
+                                <label>
+                                    <input name="sexo" type="radio">
+                                    Mujer
+                                </label>
+                            </div> 
+                        </div>
+                        <div class="form-cita-item span">
+                            <label>Servicio</label>
+                            <select name="servicio" id="servicio">
+                                <option value="servicios-generales">Servicios Generales</option>
+                                <option value="salud-ocupacional">Salud Ocupacional</option>
+                                <option value="laboratorio">Laboratorio</option>
+                                <option value="covid">Covid-19</option>
+                            </select>
+                        </div>
                         <div class="form-cita-item">
                             <label>Fecha de Reservación</label>
                             <input type="date">
                         </div>
                     </fieldset>
+                    <button type="submit">ENVIAR</button>
                 </form>
             </div>
         </div>

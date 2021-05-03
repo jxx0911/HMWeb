@@ -76,7 +76,15 @@ $(document).ready(function() {
         up();
         $('#main').load('../views/sedes/sedeHuancayo.html');
     });
-
+    //reservar Cita
+    $('#rCita').click(function() {
+        up();
+        $('#main').load('../views/reservarCita.html');
+    });
+    $('#rCitaR').click(function() {
+        up();
+        $('#main').load('../views/reservarCita.html');
+    });
     // zona covid 
 
     // prueba rapida 
